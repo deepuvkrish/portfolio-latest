@@ -1,0 +1,118 @@
+
+/* <================================= MOBILE VIEW =========================> */
+@media only screen and (max-width:768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 999;
+      }
+      .navlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        z-index: 999;
+        background: rgba(128, 128, 128, 0.215);
+        width: 100vw;
+        height: 50px;
+        align-items: center;
+      }
+      .navlinks a{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        margin-inline: 0.6rem;
+        position: relative;
+    }
+    
+    .navlinks a.active {
+        color: #98b22e;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      .navlinks a.inactive {
+        color: #717171;
+      }
+     
+    .icon-link{
+        display:none;
+    }
+    
+
+
+}
+
+/* <================================= LAPTOP_ DESKTOP VIEW =====================> */
+@media only screen and (min-width:768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        z-index: 9999;
+      }
+      .navlinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        right: 0px;
+        width: 150px;
+        height: 100vh;
+        align-items: flex-end;
+        margin-right: 20px;
+        z-index: 9999;
+
+      }
+
+      .navlinks a{
+          align-items: center;
+          color: #98b22e;
+          display: flex;
+          font-family: Poppins, sans-serif;
+          margin-block: 1rem;
+          position: relative;
+          transition: 1s;
+          
+      }
+      
+      .button-link{
+        display: block;
+        height: 50px;
+        width: 50px;
+        float: right;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #373737;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-out;
+        position: relative;
+      }
+      .button-link span{
+        position: absolute;
+        top: 50%;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1.4px;
+      }
+      .button-link:hover{    
+        background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
+        color: #fff;
+        width: 120px;
+      }
+      .button-link .icon-link{
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+      }
+    
+}
