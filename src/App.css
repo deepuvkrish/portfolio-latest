@@ -270,6 +270,7 @@ a{
     position:relative;
     width:100vw;
     padding-block: 20px;
+    min-height: 80vh;
   }
   .section-header{
     display: none;
@@ -278,11 +279,10 @@ a{
     display: grid;
     place-items: center;
     position:absolute;
-    z-index: 9;
+    z-index: 11;
     width:100vw;
     height: 55px;
     text-transform: uppercase;
-    border: 1px solid lime;
   }
   .about-section-background h1{
     font-family: Poppins, sans-serif;
@@ -552,7 +552,6 @@ a{
  .lap-exp{
   display: none;
  }
- 
  .timeline {
   width: 100%;
   padding: 4em 0 1em 0;
@@ -563,7 +562,6 @@ a{
   .timeline li {
     padding: 2em 0;
   }
-  
   .timeline:before {
     position: absolute;
     left: 0%;
@@ -634,7 +632,6 @@ a{
   .direction-r .flag:before {
     left: -40px;
   }
-
   .direction-r .flag:after {
     content: "";
     position: absolute;
@@ -648,7 +645,6 @@ a{
     border-width: 8px;
     pointer-events: none;
   }
-
   .time-wrapper {
     display: block;
     position: relative;
@@ -660,7 +656,6 @@ a{
   .direction-r .time-wrapper {
     float: right;
   }
-
   .desc {
     position: relative;
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
@@ -686,6 +681,146 @@ a{
   }
   .direction-r .time{
     border-radius: 0px 10px 10px 0px;
+  }
+  .certi-images-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 999;
+    margin-top: 60px;
+  }
+  .career-certi{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:5em 1em;
+    margin-inline:0;
+    margin-block: 0;
+  }
+   .banner , .banner1 , .banner2 , .banner3{
+      display: flex;
+      justify-content: flex-start;
+      align-items: end;
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
+      transition: all 0.3s ease-in-out;
+      margin-block: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 1s;
+  }
+  .banner div , .banner1 div ,.banner2 div ,.banner3 div {
+    min-width: 40px;
+    height: 26px;
+    border-radius: 0px 20px;
+    background-color: rgba(30, 39, 46, 0.7);
+    box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
+    color: #D7D9CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    overflow: hidden;
+    font-size: 12px;
+    padding-inline: 5px;
+  }
+  
+  
+  .banner {
+    background-image: url('./components/items/images/certificates/bishop.jpg');
+    filter:  grayscale(1);
+    transition: 1s;
+  
+  }
+  .banner:hover div{
+    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
+  }
+  .banner:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner.active {
+    height: 200px;
+  }
+  .banner.active div span::before {
+    content: "uiz";
+  }
+  
+  
+  .banner1 {
+    background-image: url('./components/items/images/certificates/guvi.png');
+    filter:  grayscale(1);
+    transition: 1s;
+  }
+  .banner1:hover div{    
+    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
+
+  }
+  .banner1:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner1.active {
+        height: 180px;
+
+  }
+  .banner1.active div span::before {
+    content: "uvi AI for India";
+  }
+  
+  
+  .banner2 {
+    background-image: url('./components/items/images/certificates/coursera.jpeg');
+    filter: grayscale(1);
+    transition: 1s;
+  }
+  .banner2:hover div{   
+    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
+  }
+  .banner2.active {
+          height: 190px;
+
+  }
+  .banner2:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner2.active div span::before {
+    content: "oursera Python";
+  }
+  
+  .banner3 {
+    background-image: url('./components/items/images/certificates/guvi.png');
+    filter: grayscale(1);
+    transition: 1s;
+  }
+  .banner3:hover div{
+    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
+   
+  }
+  .banner3:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner3.active {
+          height: 200px;
+
+  }
+  .banner3.active div span::before {
+    content: "uvi AI for India";
+    
   }
 
 
@@ -766,6 +901,7 @@ a{
     border-radius: 0px 50px 0px 50px;
   }
   .contact-web-details a{margin-right: 10px; }
+  
 
 
 }
@@ -1289,7 +1425,6 @@ a{
   margin-top: 40px;
   position: absolute;
 }
-
  .about-extra-skills{
   width: 100%;
   display: flex;
@@ -1461,6 +1596,146 @@ a{
   }
   .direction-r .desc {
     margin: 1em 0 0 0.75em;
+  }
+
+
+
+
+
+
+  /*<================================================ CAREER PAGE ==================================================================> */
+  .certi-images-section{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 320px;
+    position: relative;
+    z-index: 999;
+    margin-inline: 50px;
+  }
+
+  .career-certi{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 30px 5px 30px 5px;
+  }
+  .banner , .banner1 , .banner2 , .banner3{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 40px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
+    transition: all 0.3s ease-in-out;
+    padding: 0 5px;
+    margin: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+    
+
+  }
+  .banner div , .banner1 div ,.banner2 div ,.banner3 div {
+    min-width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: rgba(30, 39, 46, 0.7);
+    box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
+    color: #D7D9CE;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    overflow: hidden;
+  }
+  .banner {
+    background-image: url('./components/items/images/certificates/bishop.jpg');
+    filter: blur(1px) grayscale(1);
+    transition: 1s;
+
+  }
+  .banner:hover div{
+    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
+
+  }
+  .banner:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner.active {
+    width: 50%;
+  }
+  .banner.active div span::before {
+    content: "uiz";
+  }
+  .banner1 {
+    background-image: url('./components/items/images/certificates/guvi.png');
+    filter: blur(1px) grayscale(1);
+    transition: 1s;
+  }
+  .banner1:hover div{
+    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
+
+  }
+  .banner1:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner1.active {
+    width: 50%;
+  }
+  .banner1.active div span::before {
+    content: "uvi AI for India";
+  }
+  .banner2 {
+    background-image: url('./components/items/images/certificates/coursera.jpeg');
+    filter: blur(1px) grayscale(1);
+    transition: 1s;
+  }
+  .banner2:hover div{
+    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
+
+  }
+  .banner2.active {
+      width: 50%;
+  }
+  .banner2:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner2.active div span::before {
+    content: "oursera Python";
+  }
+  .banner3 {
+    background-image: url('./components/items/images/certificates/guvi.png');
+    filter: blur(1px) grayscale(1);
+    transition: 1s;
+  }
+  .banner3:hover div{
+    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
+
+  }
+  .banner3:hover{
+    filter: blur(0) grayscale(0);
+    transition: 1s;
+    background-size: cover;
+  }
+  .banner3.active {
+      width: 50%;
+  }
+  .banner3.active div span::before {
+    content: "uvi AI for India";
+    
   }
   
 
@@ -1748,7 +2023,7 @@ a{
 
 
 
-
+/* <=============================================================== COMMON STYLES ====================================================> */
 
 .floatSvg {
   position: absolute;
@@ -2423,15 +2698,7 @@ a{
     /* EXPERIENCE */
     
     
-    .certi-images-section{
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      height: 320px;
-      position: relative;
-      z-index: 999;
-      margin-inline: 50px;
-    }
+   
     .certi-image-view{
       width: 70%;
       display: flex;
@@ -2546,6 +2813,13 @@ a{
   right: 0;
   top: -1.5em;
 }
+.draw-hc2{
+  width: 300px;
+  position: absolute;
+  z-index: 10;
+  left: -157px;
+    bottom: -68px;
+}
 .honeycomb-svg {
   fill:#fff;
   stroke:#98b22e;
@@ -2556,6 +2830,24 @@ a{
 }
 
 .honeycomb-svg polygon {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: rgb(34, 34, 34);
+  background-size: cover;
+}
+.honeycomb-svg2 {
+  fill:#fff;
+  stroke:#98b22e;
+  stroke-miterlimit:10;
+  stroke-width:2px;
+  width: 300px;
+  margin: 20px auto;
+  opacity: 0.1;
+}
+
+.honeycomb-svg2 polygon {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   stroke-linecap: round;
@@ -2707,3 +2999,93 @@ a{
   width: 40px;
   margin: 0 12.5px ;
 }
+
+
+
+
+
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+
+
