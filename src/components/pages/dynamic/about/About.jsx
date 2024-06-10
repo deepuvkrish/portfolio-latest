@@ -983,12 +983,80 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='about-info exp-edu'>
+            <div className='about-info exp-edu lap-exp'>
                 <div className='about-skill-details-header'>
                     <span>   </span>
                     <span>Experience <span className='gradient-color'>& </span>Education </span>
 
                 </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Freelancer</span>
+                                <span class="time-wrapper"><span class="time">2023 - present</span></span>
+                            </div>
+                            <div class="desc">MERN Stack Developer!</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="flag">Pratian Technologies </span>
+                                <span class="time-wrapper"><span class="time">2022 Nov - 2023 May</span></span>
+                            </div>
+                            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Jyothi Engineering College</span>
+                                <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
+                            </div>
+                            <div class="desc">B.Tech in Computer Science Engineering</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div className='about-info exp-edu mob-exp'>
+                <div className='about-skill-details-header'>
+                    <span>   </span>
+                    <span>Experience <span className='gradient-color'>& </span>Education </span>
+
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Freelancer</span>
+                                <span class="time-wrapper"><span class="time">2023 - present</span></span>
+                            </div>
+                            <div class="desc">MERN Stack Developer!</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Pratian Technologies </span>
+                                <span class="time-wrapper"><span class="time">2022 Nov - 2023 May</span></span>
+                            </div>
+                            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="flag">Jyothi Engineering College</span>
+                                <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
+                            </div>
+                            <div class="desc">B.Tech in Computer Science Engineering</div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
 
 
