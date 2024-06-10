@@ -46,6 +46,7 @@ a{
     radial-gradient(at 39% 37%, hsl(184.04deg 80.77% 6.53%) 0px, transparent 50%), radial-gradient(at 16% 87%, hsl(168.96deg 98% 15.86%) 0px, transparent 50%), radial-gradient(at 73% 24%, hsl(206.19deg 36.02% 8.94%) 0px, transparent 50%), radial-gradient(at -40% -20%, rgb(1 36 27) 0px, transparent 40%), radial-gradient(at 60% 72%, rgb(3 26 13) 0px, transparent 50%), radial-gradient(at 93% 90%, rgb(20 31 0) 0px, transparent 50%);
     animation: bgoned 10s infinite;
     overflow-x: hidden; 
+    align-items: center;
   }
   @keyframes bgoned {
     0% {background-size:100%;background-position:bottom 0 right 0;}
@@ -56,7 +57,7 @@ a{
     display: none;
   }
   .home-details-section{
-    width: 100vw;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,6 +82,11 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 30px;
+  }
+  .intro-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .intro{
     padding-inline: 20px;
@@ -110,8 +116,8 @@ a{
   .text.ellipsis::after {
     content: "...";
     position: absolute;
-    right: -12px; 
-    bottom: 4px;
+    right: 7px;
+    bottom: 1px;
   }
   #gooey-button {
     padding-inline: 10px;
@@ -124,6 +130,10 @@ a{
     background: rgb(42, 178, 205);
 
 
+  }
+  #gooey-button a{
+    position: relative;
+    z-index: 999;
   }
   #gooey-button .bubbles .bubble {
     background: rgb(42, 178, 205);
@@ -247,6 +257,11 @@ a{
     0% { transform: rotate(0deg)translateY(100px) rotate(0deg); } 
     100% { transform: rotate(360deg) translateY(100px) rotate(-360deg);}
   }
+  .home-links-icon {
+    display: flex;
+    align-items: center;
+    margin-block: 20px;
+}
 
    /* <========================== ABOUT SECTION ====================> */
    .about-section{
@@ -575,16 +590,6 @@ a{
     clear: both;
     visibility: hidden;
   }
-
-
-
-
-  /* .direction-l,
-  .direction-r {
-    float: none;
-    width: 100%;
-    text-align: center;
-  } */
   .direction-r {
     position: relative;
     width: 90%;
@@ -595,8 +600,6 @@ a{
     display: inline-block;
     text-align: center;
   }
-
-
   .flag {
     position: relative;
     display: inline;
@@ -632,19 +635,6 @@ a{
     left: -40px;
   }
 
-  .direction-l .flag:after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    height: 0;
-    width: 0;
-    margin-top: -8px;
-    border: solid transparent;
-    border-left-color: rgb(102, 197, 224);
-    border-width: 8px;
-    pointer-events: none;
-  }
   .direction-r .flag:after {
     content: "";
     position: absolute;
@@ -667,16 +657,6 @@ a{
     font-size: 0.66666em;
     vertical-align: middle;
   }
-
-  .direction-l .time-wrapper {
-    float: none;
-  }
-  .direction-l .time-wrapper {
-    float: left;
-  }
-  .direction-r .time-wrapper {
-    float: none;
-  }
   .direction-r .time-wrapper {
     float: right;
   }
@@ -692,12 +672,10 @@ a{
     line-height: 1.5em;
 
   }
-  .direction-l .desc,
   .direction-r .desc {
     position: relative;
     z-index: 15;
   }
-  .direction-l .desc,
   .direction-r .desc {
     margin: 1em 4em 0 4em;
   }
@@ -705,10 +683,6 @@ a{
     display: inline-block;
     background: -webkit-linear-gradient(45deg, rgb(18, 66, 123), rgb(21, 135, 135));
     padding: 5px;
-  }
-
-  .direction-l .time{
-    border-radius: 10px 0px 0px 10px;
   }
   .direction-r .time{
     border-radius: 0px 10px 10px 0px;

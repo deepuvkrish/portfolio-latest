@@ -28,6 +28,14 @@ const Navbar = () => {
                         <span>About</span>
                     </div>
                 </NavLink>
+                <NavLink to='/projects' className={({ isActive }) => (isActive ? 'active' : 'inactive')} >
+                    <div className="button-link">
+                        <div className="icon-link">
+                            <FontAwesomeIcon icon={faCodepen} style={{ color: "#ffffff", }} />
+                        </div>
+                        <span>Projects</span>
+                    </div>
+                </NavLink>
 
                 <NavLink to='/career' className={({ isActive }) => (isActive ? 'active' : 'inactive')} >
                     <div className="button-link">
@@ -38,14 +46,7 @@ const Navbar = () => {
                     </div>
                 </NavLink>
 
-                <NavLink to='/projects' className={({ isActive }) => (isActive ? 'active' : 'inactive')} >
-                    <div className="button-link">
-                        <div className="icon-link">
-                            <FontAwesomeIcon icon={faCodepen} style={{ color: "#ffffff", }} />
-                        </div>
-                        <span>Projects</span>
-                    </div>
-                </NavLink>
+
 
                 <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : 'inactive')} >
                     <div className="button-link">

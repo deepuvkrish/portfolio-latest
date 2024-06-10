@@ -19,7 +19,7 @@ const Floatbutton = () => {
             </svg>
 
             <button id="gooey-button">
-                <Link to='/about'>Know More</Link>
+                <Link to='/about' style={{ color: "white" }}>Know More</Link>
 
                 <span className="bubbles">
                     <span className="bubble"></span>
