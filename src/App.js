@@ -1,5 +1,5 @@
 import './App.css';
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,12 +13,14 @@ import Contact from './components/pages/dynamic/contact/Contact';
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <html lang="en" />
-        <title>Deepak KV</title>
-        <meta name="description" content="Tutorial for React Helmet" />
-        <meta name="theme-color" content="#E6E6FA" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <html lang="en" />
+          <title>Deepak KV</title>
+          <meta name="description" content="Tutorial for React Helmet" />
+          <meta name="theme-color" content="#E6E6FA" />
+        </Helmet>
+      </HelmetProvider>
 
       <BrowserRouter>
         <Routes>

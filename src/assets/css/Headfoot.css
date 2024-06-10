@@ -28,7 +28,7 @@
     }
     
     .navlinks a.active {
-        color: #98b22e;
+        color: cyan;
         text-transform: uppercase;
         font-weight: 800;
       }
