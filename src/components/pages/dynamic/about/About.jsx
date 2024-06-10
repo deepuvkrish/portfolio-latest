@@ -11,13 +11,13 @@ import {
 import "react-circular-progressbar/dist/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faReact, faAngular, faNodeJs, faFigma, faHtml5, faCss3Alt, faPython, faJs } from '@fortawesome/free-brands-svg-icons';
 import { faSquarePhone, faUser, faCakeCandles, faFlag, faHouseChimney, faVolumeHigh, faTerminal, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import cv from '../../../items/docs/cv.pdf'
 import india from '../../../items/images/ui/india.png'
-import reactimg from '../../../items/images/ui/reactjs.png'
-import nodeimg from '../../../items/images/ui/nodejs.png'
+import postimg from '../../../items/images/ui/postman.png'
+import vsimg from '../../../items/images/ui/vs.png'
 import jsimg from '../../../items/images/ui/javascript.png'
 import htmlimg from '../../../items/images/ui/html.png'
 import cssimg from '../../../items/images/ui/css.png'
@@ -57,9 +57,9 @@ const About = () => {
             </div>
             <div className='about-info'>
                 <div className='about-personal-details'>
-                    <div className='about-personal-details-header'>
+                    {/* <div className='about-personal-details-header'>
                         <span>personal <span className='gradient-color'>information</span></span>
-                    </div>
+                    </div> */}
                     <div className='about-personal-details-tabs'>
                         <div className='left-side-personal-details'>
                             <span className='about-hov'><FontAwesomeIcon icon={faUser} style={{ color: "#ffffff", }} /><span className='details-font'>Deepak KV</span></span>
@@ -96,13 +96,19 @@ const About = () => {
                 </div>
 
             </div>
-
-            <div className='about-info about-skill-section'>
-                <div className='about-skill-details-header'>
-                    <span><span className='gradient-color'>My </span>Skills </span>
+            <div className='section-header' style={{ marginTop: "50px" }}>
+                <div className='about-section-background'>
+                    <h1>Showcasing</h1>
                 </div>
+                <div className='about-title-section'>
+                    <h1>My <span className='gradient-color'>Skills</span></h1>
+                </div>
+            </div>
+
+
+            <div className='about-infos about-skill-section'>
                 <div className='about-skill'>
-                    <div className='about-skill-web'>
+                    {/* <div className='about-skill-web'>
                         <div className='about-skill-web-header'>
                             <h1>Web technologies </h1><span />
                         </div>
@@ -115,12 +121,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(0,255 ,226, ${percentage / 100})`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -162,12 +168,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(255,0,0)`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -209,12 +215,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(131, 186, 18, ${percentage / 100})`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -256,12 +262,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(255 ,238 ,61, ${percentage / 100})`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -303,12 +309,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(120,201,255))`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -350,12 +356,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(122 ,118 ,197, ${percentage / 100})`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -397,12 +403,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(255 ,122 ,61 , ${percentage / 100})`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -444,12 +450,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(33 ,150 ,243 , ${percentage / 100})`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -500,12 +506,12 @@ const About = () => {
                                             return (
                                                 <CircularProgressbarWithChildren
                                                     value={percentage}
-                                                    strokeWidth={2}
+                                                    strokeWidth={1}
                                                     styles={{
                                                         root: {},
                                                         path: {
-                                                            stroke: `rgba(0,255 ,226, ${percentage / 100})`,
-                                                            strokeLinecap: 'round',
+                                                            stroke: `rgba(140,206 ,14)`,
+                                                            strokeLinecap: 'butt',
                                                             transition: 'stroke-dashoffset 1.5s ease 0s',
                                                             transform: 'rotate(0turn)',
                                                             transformOrigin: 'center center',
@@ -547,12 +553,12 @@ const About = () => {
                                             return (
                                                 <CircularProgressbarWithChildren
                                                     value={percentage}
-                                                    strokeWidth={2}
+                                                    strokeWidth={1}
                                                     styles={{
                                                         root: {},
                                                         path: {
-                                                            stroke: `rgba(0 ,115, 34)`,
-                                                            strokeLinecap: 'round',
+                                                            stroke: `rgba(140,206 ,14)`,
+                                                            strokeLinecap: 'butt',
                                                             transition: 'stroke-dashoffset 1.5s ease 0s',
                                                             transform: 'rotate(0turn)',
                                                             transformOrigin: 'center center',
@@ -601,12 +607,12 @@ const About = () => {
                                             return (
                                                 <CircularProgressbarWithChildren
                                                     value={percentage}
-                                                    strokeWidth={2}
+                                                    strokeWidth={1}
                                                     styles={{
                                                         root: {},
                                                         path: {
-                                                            stroke: `rgba(0,68 ,130)`,
-                                                            strokeLinecap: 'round',
+                                                            stroke: `rgba(140,206 ,14)`,
+                                                            strokeLinecap: 'butt',
                                                             transition: 'stroke-dashoffset 1.5s ease 0s',
                                                             transform: 'rotate(0turn)',
                                                             transformOrigin: 'center center',
@@ -648,12 +654,12 @@ const About = () => {
                                             return (
                                                 <CircularProgressbarWithChildren
                                                     value={percentage}
-                                                    strokeWidth={2}
+                                                    strokeWidth={1}
                                                     styles={{
                                                         root: {},
                                                         path: {
-                                                            stroke: `rgba(255 ,248 ,81)`,
-                                                            strokeLinecap: 'round',
+                                                            stroke: `rgba(140,206 ,14)`,
+                                                            strokeLinecap: 'butt',
                                                             transition: 'stroke-dashoffset 1.5s ease 0s',
                                                             transform: 'rotate(0turn)',
                                                             transformOrigin: 'center center',
@@ -695,12 +701,12 @@ const About = () => {
                                             return (
                                                 <CircularProgressbarWithChildren
                                                     value={percentage}
-                                                    strokeWidth={2}
+                                                    strokeWidth={1}
                                                     styles={{
                                                         root: {},
                                                         path: {
-                                                            stroke: `rgba(125,0,0)`,
-                                                            strokeLinecap: 'round',
+                                                            stroke: `rgba(140,206 ,14)`,
+                                                            strokeLinecap: 'butt',
                                                             transition: 'stroke-dashoffset 1.5s ease 0s',
                                                             transform: 'rotate(0turn)',
                                                             transformOrigin: 'center center',
@@ -750,12 +756,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(0,63,137)`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -797,12 +803,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(255,255,255)`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -843,12 +849,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(63,127 ,200)`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -890,12 +896,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(100,212,106)`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -937,12 +943,12 @@ const About = () => {
                                         return (
                                             <CircularProgressbarWithChildren
                                                 value={percentage}
-                                                strokeWidth={2}
+                                                strokeWidth={1}
                                                 styles={{
                                                     root: {},
                                                     path: {
-                                                        stroke: `rgba(250,156,79)`,
-                                                        strokeLinecap: 'round',
+                                                        stroke: `rgba(140,206 ,14)`,
+                                                        strokeLinecap: 'butt',
                                                         transition: 'stroke-dashoffset 1.5s ease 0s',
                                                         transform: 'rotate(0turn)',
                                                         transformOrigin: 'center center',
@@ -979,16 +985,67 @@ const About = () => {
 
                         </div>
 
+                    </div> */}
+
+                    <div className='about-skill-tab1'>
+                        <div className='content-skills'>
+                            <div className='front-end-div'>
+                                <div className='front-end-div-header'>
+                                    <span>Front End</span>
+                                </div>
+                                <div className='front-end-tech'>
+                                    <FontAwesomeIcon icon={faReact} />
+                                    <FontAwesomeIcon icon={faAngular} />
+                                    <FontAwesomeIcon icon={faHtml5} />
+                                    <FontAwesomeIcon icon={faCss3Alt} />
+                                    <FontAwesomeIcon icon={faJs} />
+                                </div>
+                            </div>
+                            <div className='back-end-div'>
+                                <div className='back-end-div-header'>
+                                    <span>Back End</span>
+                                </div>
+                                <div className='back-end-tech'>
+                                    <FontAwesomeIcon icon={faNodeJs} />
+                                    <FontAwesomeIcon icon={faPython} />
+                                    <img src={sqlimg} />
+                                    <img src={mongoimg} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='content-skill2'>
+                            <div className='app-div-header'>
+                                <span>Applications</span>
+                            </div>
+                            <div className='app-tech'>
+                                <FontAwesomeIcon icon={faGithub} />
+                                <img src={postimg} />
+                                <FontAwesomeIcon icon={faFigma} />
+                                <img src={vsimg} />
+                                <img src={wordimage} />
+                                <img src={excelimage} />
+                                <img src={ppimage} />
+                                <img src={psimage} />
+                            </div>
+                        </div>
+
                     </div>
+
+                </div>
+            </div>
+
+
+
+            <div className='section-header' style={{ marginTop: "50px" }}>
+                <div className='about-section-background'>
+                    <h1>History of My Life</h1>
+                </div>
+                <div className='about-title-section'>
+                    <h1>Education <span className='gradient-color'>&</span>Experience</h1>
                 </div>
             </div>
 
             <div className='about-info exp-edu lap-exp'>
-                <div className='about-skill-details-header'>
-                    <span>   </span>
-                    <span>Experience <span className='gradient-color'>& </span>Education </span>
-
-                </div>
                 <ul class="timeline">
                     <li>
                         <div class="direction-r">
