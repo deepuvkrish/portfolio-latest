@@ -48,10 +48,13 @@ const Home = () => {
                         </span>
                         {<Cursor cursorColor={'white'} height={300} />}
                     </h3>
-                    <div class="text ellipsis">
+                    <div className="text ellipsis">
                         <div className='intro'>
-                            <span class="text-concat">
-                                As a <span className='greenish'>multidisciplinary designer </span> , I primarly specialize in interaction, visual, brand, motion, and more. I'm passionate about crafting seamless in user experiences and thrive on challenges that demand creativity and innovation.
+                            <span className="text-concat courier-prime-regular">
+                                As a <span className='greenish'>multidisciplinary designer </span>,I specialize in creating dynamic, responsive, and user-centric web applications.
+                            </span>
+                            <span className='text-concat courier-prime-regular'>My passion for coding is matched by my commitment to deliver <span className='greenish'>high-quality solutions</span> that drive user engagement and satisfaction.My portfolio showcases a range of projects, from innovative startups to established enterprises, each reflecting my ability to translate complex requirements into intuitive and effective <span className='greenish'>web applications.</span>
+
                             </span>
                         </div>
                     </div>

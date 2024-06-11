@@ -105,6 +105,27 @@ const About = () => {
                 </div>
             </div>
 
+            <div className='exp-period-section'>
+                <div className='exp-period'>
+                    <div className='exp-number'>
+                        <span className='green'>1+</span>
+                    </div>
+                    <div className='exp-chars'>
+                        <span className='green-text'>Years of</span>
+                        <span>Experience</span>
+                    </div>
+                </div>
+                <div className='exp-period'>
+                    <div className='exp-number'>
+                        <span className='green'>10+</span>
+
+                    </div>
+                    <div className='exp-chars'>
+                        <p className='green-comp'>Completed</p>
+                        <p className='green-proj'>Works</p>
+                    </div>
+                </div>
+            </div>
 
             <div className='about-infos about-skill-section'>
                 <div className='about-skill'>
@@ -1019,13 +1040,13 @@ const About = () => {
                             </div>
                             <div className='app-tech'>
                                 <FontAwesomeIcon icon={faGithub} />
-                                <img src={postimg} />
+                                <img src={postimg} className='postman' />
                                 <FontAwesomeIcon icon={faFigma} />
-                                <img src={vsimg} />
-                                <img src={wordimage} />
-                                <img src={excelimage} />
-                                <img src={ppimage} />
-                                <img src={psimage} />
+                                <img src={vsimg} className='vscode' />
+                                <img src={wordimage} className='wordms' />
+                                <img src={excelimage} className='excel' />
+                                <img src={ppimage} className='powerpoint' />
+                                <img src={psimage} className='photoshop' />
                             </div>
                         </div>
 
