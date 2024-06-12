@@ -42,10 +42,10 @@ const Contact = () => {
     return (
         <div className='contact-section'>
             <div className='home-background'>
-                <div class='box'>
-                    <div class='wave -one'></div>
-                    <div class='wave -two'></div>
-                    <div class='wave -three'></div>
+                <div className='box'>
+                    <div className='wave -one'></div>
+                    <div className='wave -two'></div>
+                    <div className='wave -three'></div>
                 </div>
             </div>
 

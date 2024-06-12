@@ -1,13 +1,4 @@
-import React, { useState } from 'react';
-
-
-import { render } from "react-dom";
-import VisibilitySensor from "react-visibility-sensor";
-import {
-    CircularProgressbar,
-    CircularProgressbarWithChildren,
-    buildStyles
-} from "react-circular-progressbar";
+import React from 'react';
 import "react-circular-progressbar/dist/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,33 +9,21 @@ import cv from '../../../items/docs/cv.pdf'
 import india from '../../../items/images/ui/india.png'
 import postimg from '../../../items/images/ui/postman.png'
 import vsimg from '../../../items/images/ui/vs.png'
-import jsimg from '../../../items/images/ui/javascript.png'
-import htmlimg from '../../../items/images/ui/html.png'
-import cssimg from '../../../items/images/ui/css.png'
-import phpimg from '../../../items/images/ui/php.png'
 import sqlimg from '../../../items/images/ui/mysql.png'
 import mongoimg from '../../../items/images/ui/mongo.png'
-import javaimg from '../../../items/images/ui/java.png'
-import cimage from '../../../items/images/ui/c.png'
-import pyimg from '../../../items/images/ui/python.png'
-import angularimg from '../../../items/images/ui/angular.png'
-import tsimage from '../../../items/images/ui/type.png'
 import psimage from '../../../items/images/ui/photoshop.png'
-import figimage from '../../../items/images/ui/figma.png'
 import wordimage from '../../../items/images/ui/word.png'
 import excelimage from '../../../items/images/ui/excel.png'
 import ppimage from '../../../items/images/ui/powerpoint.png'
 
-
+import { Icon } from '@iconify-icon/react';
+import { Figma, Js, LinkedinOption, Node, WhatsApp } from 'grommet-icons';
 
 
 
 
 
 const About = () => {
-    const percentager = 66;
-
-
     return (
         <div className='about-section'>
             <div className='section-header'>
@@ -55,34 +34,90 @@ const About = () => {
                     <h1>About <span className='gradient-color'>Me</span></h1>
                 </div>
             </div>
+            <div className='section-header-mob'>
+                <div className='about-section-background'>
+                    <h1>Who am i</h1>
+                </div>
+                <div className='about-title-section'>
+                    <h1><span className='gradient-color'>I</span> am</h1>
+                </div>
+            </div>
+
             <div className='about-info'>
                 <div className='about-personal-details'>
-                    {/* <div className='about-personal-details-header'>
-                        <span>personal <span className='gradient-color'>information</span></span>
-                    </div> */}
                     <div className='about-personal-details-tabs'>
                         <div className='left-side-personal-details'>
-                            <span className='about-hov'><FontAwesomeIcon icon={faUser} style={{ color: "#ffffff", }} /><span className='details-font'>Deepak KV</span></span>
-                            <span className='about-hov'><FontAwesomeIcon icon={faTerminal} style={{ color: "#ffffff", }} /><span className='details-font'>MERN Dev</span></span>
+                            <span className='about-hov'>
+                                <FontAwesomeIcon icon={faUser} style={{ color: "#ffffff", }} />
+                                <span className='details-font'>Deepak KV</span>
+                            </span>
+                            <span className='about-hov'>
+                                <FontAwesomeIcon icon={faTerminal} style={{ color: "#ffffff", }} />
+                                <span className='details-font'>MERN Dev</span>
+                            </span>
                             <span className='about-hov'><FontAwesomeIcon icon={faCakeCandles} style={{ color: "#ffffff", }} /><span className='details-font'>23 Jun 1995</span></span>
-                            <span className='about-hov'><FontAwesomeIcon icon={faSquarePhone} style={{ color: "#ffffff", }} /><span className='details-font'>+91 994 791 8068</span></span>
+                            <span className='about-hov'>
+                                <FontAwesomeIcon icon={faSquarePhone} style={{ color: "#ffffff", }} />
+                                <span className='details-font'>+91 994 791 8068</span>
+                            </span>
                             <span className='about-hov'><FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff", }} /><span className='details-font'><a href='https://github.com/deepuvkrish'>deepuvkrish</a></span></span>
 
                         </div>
+
+
+                        {/* Mobile version  */}
+                        <div className='left-side-personal-details-mob'>
+                            <span className='about-hov'>
+                                <FontAwesomeIcon icon={faUser} style={{ color: "#ffffff", }} />
+                                <span className='details-font'>Deepak KV</span>
+                            </span>
+                            <span className='about-hov'>
+                                <FontAwesomeIcon icon={faTerminal} style={{ color: "#ffffff", }} />
+                                <span className='details-font'>MERN Dev</span>
+                            </span>
+                            <span className='about-hov'><FontAwesomeIcon icon={faCakeCandles} style={{ color: "#ffffff", }} /><span className='details-font'>23 Jun 1995</span></span>
+                            <span className='about-hov'>
+                                <WhatsApp color='plain' size='small' />
+                                <span className='details-font'>+91 994 791 8068</span>
+                            </span>
+                            <span className='about-hov'><FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff", }} /><span className='details-font'><a href='https://github.com/deepuvkrish'>deepuvkrish</a></span></span>
+
+                        </div>
+
+
                         <div className='right-side-personal-details'>
-                            <span className='about-hov'><FontAwesomeIcon icon={faFlag} style={{ color: "#ffffff", }} /><span className='details-font'>Indian <img src={india} className='bio-details-img' /></span></span>
+                            <span className='about-hov'><FontAwesomeIcon icon={faFlag} style={{ color: "#ffffff", }} /><span className='details-font'>Indian <img src={india} className='bio-details-img' alt='india icon' /></span></span>
                             <span className='about-hov'><FontAwesomeIcon icon={faHouseChimney} style={{ color: "#ffffff", }} /><span className='details-font'>Palakkad, Kerala</span></span>
                             <span className='about-hov'><FontAwesomeIcon icon={faVolumeHigh} style={{ color: "#ffffff", }} /><span className='details-font'>Eng, Hin, Mal, Tam, Kan</span></span>
-                            <span className='about-hov'><FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffffff", }} /><span className='details-font'><a href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWKvJzwGTwrMMbPzcsRkwrxHtrVNNDgVGxZcTrBlgRpdwTGWnrPRndblqmcDkNqlxVbV' target="_blank">kvdeepakkv1995@gmail.com</a></span></span>
-                            <span className='about-hov'><FontAwesomeIcon icon={faLinkedin} style={{ color: "#ffffff", }} /><span className='details-font'><a href='https://www.linkedin.com/in/deepak-k-v-b51752161/'>deepak-k-v</a></span></span>
+                            <span className='about-hov'><FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffffff", }} /><span className='details-font'><a href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWKvJzwGTwrMMbPzcsRkwrxHtrVNNDgVGxZcTrBlgRpdwTGWnrPRndblqmcDkNqlxVbV' target="_blank" rel='noreferrer'>kvdeepakkv1995@gmail.com</a></span></span>
+                            <span className='about-hov'><FontAwesomeIcon icon={faLinkedin} style={{ color: "#ffffff", }} /><span className='details-font'><a href='https://www.linkedin.com/in/deepak-k-v-b51752161/' target="_blank" rel='noreferrer'>deepak-k-v</a></span></span>
                         </div>
                         {/* Mobile version  */}
                         <div className='right-side-personal-details-mob'>
-                            <span className='about-hov'><span className='details-font'><img src={india} className='bio-details-img' />Indian </span><FontAwesomeIcon icon={faFlag} style={{ color: "#ffffff", }} /></span>
-                            <span className='about-hov'><span className='details-font'>Palakkad, Kerala</span><FontAwesomeIcon icon={faHouseChimney} style={{ color: "#ffffff", }} /></span>
-                            <span className='about-hov'><span className='details-font'>Eng, Hin, Mal, Tam, Kan</span><FontAwesomeIcon icon={faVolumeHigh} style={{ color: "#ffffff", }} /></span>
-                            <span className='about-hov'><span className='details-font'><a href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWKvJzwGTwrMMbPzcsRkwrxHtrVNNDgVGxZcTrBlgRpdwTGWnrPRndblqmcDkNqlxVbV' target="_blank">kvdeepakkv1995@gmail.com</a></span><FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffffff", }} /></span>
-                            <span className='about-hov'><span className='details-font'><a href='https://www.linkedin.com/in/deepak-k-v-b51752161/'>deepak-k-v</a></span><FontAwesomeIcon icon={faLinkedin} style={{ color: "#ffffff", }} /></span>
+                            <span className='about-hov'>
+                                <span className='details-font'><img src={india} className='bio-details-img' alt='india icon' />Indian </span>
+                                <FontAwesomeIcon icon={faFlag} style={{ color: "#ffffff", }} />
+                            </span>
+                            <span className='about-hov'>
+                                <span className='details-font'>Palakkad, Kerala</span>
+                                <FontAwesomeIcon icon={faHouseChimney} style={{ color: "#ffffff", }} />
+                            </span>
+                            <span className='about-hov'>
+                                <span className='details-font'>Eng, Hin, Mal, Tam, Kan</span>
+                                <FontAwesomeIcon icon={faVolumeHigh} style={{ color: "#ffffff", }} />
+                            </span>
+                            <span className='about-hov'>
+                                <span className='details-font'>
+                                    <a href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWKvJzwGTwrMMbPzcsRkwrxHtrVNNDgVGxZcTrBlgRpdwTGWnrPRndblqmcDkNqlxVbV' target="_blank" rel='noreferrer'>kvdeepakkv1995@gmail.com</a>
+                                </span>
+                                <Icon icon="logos:google-gmail" width="0.5rem" height="0.5rem" />
+                            </span>
+                            <span className='about-hov'>
+                                <span className='details-font'>
+                                    <a href='https://www.linkedin.com/in/deepak-k-v-b51752161/' target="_blank" rel='noreferrer'>deepak-k-v</a>
+                                </span>
+                                <LinkedinOption color='plain' size='small' />
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -96,7 +131,8 @@ const About = () => {
                 </div>
 
             </div>
-            <div className='section-header' style={{ marginTop: "50px" }}>
+
+            <div className='section-header-mob' style={{ marginTop: "10px" }}>
                 <div className='about-section-background'>
                     <h1>Showcasing</h1>
                 </div>
@@ -105,6 +141,247 @@ const About = () => {
                 </div>
             </div>
 
+
+
+            <div className='about-infos about-skill-section lap-skills-section'>
+                <div className='about-skill'>
+                    <div className='about-skill-tab1'>
+                        <div className='content-skills'>
+                            <div className='front-end-div'>
+                                <div className='front-end-div-header'>
+                                    <span>Front End</span>
+                                </div>
+                                <div className='front-end-tech'>
+                                    <div>
+                                        <FontAwesomeIcon icon={faReact} />
+                                        <span className='tech-title'>React JS</span>
+                                    </div>
+                                    <div>
+                                        <FontAwesomeIcon icon={faAngular} />
+                                        <span className='tech-title'>Angular JS</span>
+                                    </div>
+                                    <div>
+                                        <FontAwesomeIcon icon={faJs} />
+                                        <span className='tech-title'>JavaScript</span>
+                                    </div>
+                                    <div>
+                                        <FontAwesomeIcon icon={faHtml5} />
+                                        <span className='tech-title'>html 5</span>
+                                    </div>
+                                    <div>
+                                        <FontAwesomeIcon icon={faCss3Alt} />
+                                        <span className='tech-title'>css 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='back-end-div'>
+                                <div className='back-end-div-header'>
+                                    <span>Back End</span>
+                                </div>
+                                <div className='back-end-tech'>
+                                    <div>
+                                        <FontAwesomeIcon icon={faNodeJs} />
+                                        <span className='tech-title'>Node JS</span>
+                                    </div>
+                                    <div>
+                                        <FontAwesomeIcon icon={faPython} />
+                                        <span className='tech-title'>Python</span>
+                                    </div>
+                                    <div>
+                                        <img src={sqlimg} alt='mysql icon' className='sqls' />
+                                        <span className='tech-title'>mysql</span>
+                                    </div>
+                                    <div>
+                                        <img src={mongoimg} alt='mongo db icon' className='mongos' />
+                                        <span className='tech-title'>mongo DB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='content-skill2'>
+                            <div className='app-div-header'>
+                                <span>Applications</span>
+                            </div>
+                            <div className='app-tech'>
+                                <div>
+                                    <FontAwesomeIcon icon={faGithub} />
+                                    <span className='tech-title'>Github</span>
+                                </div>
+                                <div>
+                                    <img src={postimg} className='postman' alt='postman icon' />
+                                    <span className='tech-title'>Postman</span>
+                                </div>
+                                <div>
+                                    <FontAwesomeIcon icon={faFigma} />
+                                    <span className='tech-title'>Figma</span>
+                                </div>
+                                <div>
+                                    <img src={vsimg} className='vscode' alt='vscode icon' />
+                                    <span className='tech-title'>VS code</span>
+                                </div>
+                                <div>
+                                    <img src={wordimage} className='wordms' alt='word icon' />
+                                    <span className='tech-title'>MS word</span>
+                                </div>
+                                <div>
+                                    <img src={excelimage} className='excel' alt='excel icon' />
+                                    <span className='tech-title'>Ms Excel </span>
+                                </div>
+                                <div>
+                                    <img src={ppimage} className='powerpoint' alt='powerpoint icon' />
+                                    <span className='tech-title'>Powerpoint</span>
+                                </div>
+                                <div>
+                                    <img src={psimage} className='photoshop' alt='ps icon' />
+                                    <span className='tech-title'>Adobe PS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div className='about-infos about-skill-section mobile-skills-section'>
+                <div className='about-skill'>
+                    <div className='about-skill-tab1'>
+                        <div className='content-skills'>
+                            <div className='front-end-div'>
+                                <div className='front-end-div-header'>
+                                    <span>Front End</span>
+                                </div>
+                                <div className='front-end-tech'>
+                                    <div>
+                                        <Icon icon="logos:react" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>React JS</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="devicon:angularjs" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>Angular JS</span>
+                                    </div>
+                                    <div>
+                                        <Js color='plain' />
+                                        <span className='tech-title'>JavaScript</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="logos:php" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>Php</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="devicon:html5" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>html 5</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="devicon:css3" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>css 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='back-end-div'>
+                                <div className='back-end-div-header'>
+                                    <span>Back End</span>
+                                </div>
+                                <div className='back-end-tech'>
+                                    <div>
+                                        <Node color='plain' />
+                                        <span className='tech-title'>Node JS</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="logos:django-icon" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>Django</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="logos:mysql" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>mysql</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="logos:mongodb-icon" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>mongo DB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='core-end-div'>
+                                <div className='core-div-header'>
+                                    <span>Core</span>
+                                </div>
+                                <div className='core-end-tech'>
+                                    <div>
+                                        <Icon icon="logos:c-plusplus" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>C++</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="logos:python" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>Python</span>
+                                    </div>
+                                    <div>
+                                        <Icon icon="logos:java" width="1.3rem" height="1.3rem" />
+                                        <span className='tech-title'>Java</span>
+                                    </div>
+                                    <div>
+                                        <img src={mongoimg} alt='mongo db icon' className='mongos' />
+                                        <span className='tech-title'>mongo DB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='content-skill2'>
+                            <div className='app-div-header'>
+                                <span>Applications</span>
+                            </div>
+                            <div className='app-tech'>
+                                <div>
+                                    <Icon icon="logos:git-icon" width="1.3rem" height="1.3rem" />
+                                    <span className='tech-title'>Github</span>
+                                </div>
+                                <div>
+                                    <Icon icon="logos:postman-icon" width="1.3rem" height="1.3rem" />
+                                    <span className='tech-title'>Postman</span>
+                                </div>
+                                <div>
+                                    <Figma color='plain' />
+                                    <span className='tech-title'>Figma</span>
+                                </div>
+                                <div>
+                                    <Icon icon="logos:visual-studio-code" width="1.3rem" height="1.3rem" />
+                                    <span className='tech-title'>VS code</span>
+                                </div>
+                                <div>
+                                    <img src={wordimage} className='wordms' alt='word icon' />
+                                    <span className='tech-title'>MS word</span>
+                                </div>
+                                <div>
+                                    <img src={excelimage} className='excel' alt='excel icon' />
+                                    <span className='tech-title'>Ms Excel </span>
+                                </div>
+                                <div>
+                                    <img src={ppimage} className='powerpoint' alt='powerpoint icon' />
+                                    <span className='tech-title'>Powerpoint</span>
+                                </div>
+                                <div>
+                                    <Icon icon="devicon:photoshop" width="1.3rem" height="1.3rem" />
+                                    <span className='tech-title'>Adobe PS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div className='section-header' style={{ marginTop: "50px" }}>
+                <div className='about-section-background'>
+                    <h1>History of My Life</h1>
+                </div>
+                <div className='about-title-section'>
+                    <h1>Education <span className='gradient-color'>&</span>Experience</h1>
+                </div>
+            </div>
             <div className='exp-period-section'>
                 <div className='exp-period'>
                     <div className='exp-number'>
@@ -112,7 +389,7 @@ const About = () => {
                     </div>
                     <div className='exp-chars'>
                         <span className='green-text'>Years of</span>
-                        <span>Experience</span>
+                        <span className='exp-text2'>Experience</span>
                     </div>
                 </div>
                 <div className='exp-period'>
@@ -127,972 +404,33 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='about-infos about-skill-section'>
-                <div className='about-skill'>
-                    {/* <div className='about-skill-web'>
-                        <div className='about-skill-web-header'>
-                            <h1>Web technologies </h1><span />
-                        </div>
-                        <div className='about-skill-meter-section'>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const react = 75;
-                                        const percentage = isVisible ? react : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={reactimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const angular = 35;
-                                        const percentage = isVisible ? angular : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={angularimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const node = 75;
-                                        const percentage = isVisible ? node : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    style={{ width: 40, marginBlock: 5 }}
-                                                    src={nodeimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const js = 80;
-                                        const percentage = isVisible ? js : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={jsimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const ts = 50;
-                                        const percentage = isVisible ? ts : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={tsimage}
-                                                    alt="typescript"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const php = 90;
-                                        const percentage = isVisible ? php : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={phpimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const html = 90;
-                                        const percentage = isVisible ? html : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={htmlimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const css = 90;
-                                        const percentage = isVisible ? css : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={cssimg}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='about-extra-skills'>
-                        <div className='about-skill-extra'>
-                            <div className='about-skill-web-header about-skill-web-db-header'>
-                                <span />
-                                <h1>DataBases </h1>
-                            </div>
-                            <div className='about-skill-meter-section'>
-                                <div className='about-skill-meters-db'>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const sql = 75;
-                                            const percentage = isVisible ? sql : 0;
-                                            return (
-                                                <CircularProgressbarWithChildren
-                                                    value={percentage}
-                                                    strokeWidth={1}
-                                                    styles={{
-                                                        root: {},
-                                                        path: {
-                                                            stroke: `rgba(140,206 ,14)`,
-                                                            strokeLinecap: 'butt',
-                                                            transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                            transform: 'rotate(0turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        trail: {
-                                                            stroke: '#292929',
-                                                            strokeLinecap: 'butt',
-                                                            transform: 'rotate(0.25turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        text: {
-                                                            fill: '#fff',
-                                                            fontSize: '16px',
-                                                            textAlign: 'center',
-                                                        },
-                                                        background: {
-                                                            fill: '#111',
-                                                        },
-                                                    }}
-                                                >
-                                                    <img
-                                                        className='about-skill-meters-img'
-                                                        src={sqlimg}
-                                                        alt="react"
-                                                    />
-                                                    <div className='about-skill-meter-reading'>
-                                                        <strong>{`${percentage}%`}</strong>
-                                                    </div>
-                                                </CircularProgressbarWithChildren>
-                                            );
-                                        }}
-                                    </VisibilitySensor>
-                                </div>
-                                <div className='about-skill-meters-db'>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const mongo = 60;
-                                            const percentage = isVisible ? mongo : 0;
-                                            return (
-                                                <CircularProgressbarWithChildren
-                                                    value={percentage}
-                                                    strokeWidth={1}
-                                                    styles={{
-                                                        root: {},
-                                                        path: {
-                                                            stroke: `rgba(140,206 ,14)`,
-                                                            strokeLinecap: 'butt',
-                                                            transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                            transform: 'rotate(0turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        trail: {
-                                                            stroke: '#292929',
-                                                            strokeLinecap: 'butt',
-                                                            transform: 'rotate(0.25turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        text: {
-                                                            fill: '#fff',
-                                                            fontSize: '16px',
-                                                            textAlign: 'center',
-                                                        },
-                                                        background: {
-                                                            fill: '#111',
-                                                        },
-                                                    }}
-                                                >
-                                                    <img
-                                                        className='about-skill-meters-img'
-                                                        src={mongoimg}
-                                                        alt="react"
-                                                    />
-                                                    <div className='about-skill-meter-reading'>
-                                                        <strong>{`${percentage}%`}</strong>
-                                                    </div>
-                                                </CircularProgressbarWithChildren>
-                                            );
-                                        }}
-                                    </VisibilitySensor>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='about-skill-extra'>
-                            <div className='about-skill-web-header about-skill-core-header'>
-                                <h1>Core </h1><span />
-                            </div>
-                            <div className='about-skill-meter-section'>
-                                <div className='about-skill-meters-db'>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const c = 85;
-                                            const percentage = isVisible ? c : 0;
-                                            return (
-                                                <CircularProgressbarWithChildren
-                                                    value={percentage}
-                                                    strokeWidth={1}
-                                                    styles={{
-                                                        root: {},
-                                                        path: {
-                                                            stroke: `rgba(140,206 ,14)`,
-                                                            strokeLinecap: 'butt',
-                                                            transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                            transform: 'rotate(0turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        trail: {
-                                                            stroke: '#292929',
-                                                            strokeLinecap: 'butt',
-                                                            transform: 'rotate(0.25turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        text: {
-                                                            fill: '#fff',
-                                                            fontSize: '16px',
-                                                            textAlign: 'center',
-                                                        },
-                                                        background: {
-                                                            fill: '#111',
-                                                        },
-                                                    }}
-                                                >
-                                                    <img
-                                                        className='about-skill-meters-img'
-                                                        src={cimage}
-                                                        alt="c"
-                                                    />
-                                                    <div className='about-skill-meter-reading'>
-                                                        <strong>{`${percentage}%`}</strong>
-                                                    </div>
-                                                </CircularProgressbarWithChildren>
-                                            );
-                                        }}
-                                    </VisibilitySensor>
-                                </div>
-                                <div className='about-skill-meters-db'>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const phy = 80;
-                                            const percentage = isVisible ? phy : 0;
-                                            return (
-                                                <CircularProgressbarWithChildren
-                                                    value={percentage}
-                                                    strokeWidth={1}
-                                                    styles={{
-                                                        root: {},
-                                                        path: {
-                                                            stroke: `rgba(140,206 ,14)`,
-                                                            strokeLinecap: 'butt',
-                                                            transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                            transform: 'rotate(0turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        trail: {
-                                                            stroke: '#292929',
-                                                            strokeLinecap: 'butt',
-                                                            transform: 'rotate(0.25turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        text: {
-                                                            fill: '#fff',
-                                                            fontSize: '16px',
-                                                            textAlign: 'center',
-                                                        },
-                                                        background: {
-                                                            fill: '#111',
-                                                        },
-                                                    }}
-                                                >
-                                                    <img
-                                                        className='about-skill-meters-img'
-                                                        src={pyimg}
-                                                        alt="react"
-                                                    />
-                                                    <div className='about-skill-meter-reading'>
-                                                        <strong>{`${percentage}%`}</strong>
-                                                    </div>
-                                                </CircularProgressbarWithChildren>
-                                            );
-                                        }}
-                                    </VisibilitySensor>
-                                </div>
-                                <div className='about-skill-meters-db'>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) => {
-                                            const javas = 80;
-                                            const percentage = isVisible ? javas : 0;
-                                            return (
-                                                <CircularProgressbarWithChildren
-                                                    value={percentage}
-                                                    strokeWidth={1}
-                                                    styles={{
-                                                        root: {},
-                                                        path: {
-                                                            stroke: `rgba(140,206 ,14)`,
-                                                            strokeLinecap: 'butt',
-                                                            transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                            transform: 'rotate(0turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        trail: {
-                                                            stroke: '#292929',
-                                                            strokeLinecap: 'butt',
-                                                            transform: 'rotate(0.25turn)',
-                                                            transformOrigin: 'center center',
-                                                        },
-                                                        text: {
-                                                            fill: '#fff',
-                                                            fontSize: '16px',
-                                                            textAlign: 'center',
-                                                        },
-                                                        background: {
-                                                            fill: '#111',
-                                                        },
-                                                    }}
-                                                >
-                                                    <img
-                                                        className='about-skill-meters-img'
-                                                        src={javaimg}
-                                                        alt="react"
-                                                    />
-                                                    <div className='about-skill-meter-reading'>
-                                                        <strong>{`${percentage}%`}</strong>
-                                                    </div>
-                                                </CircularProgressbarWithChildren>
-                                            );
-                                        }}
-                                    </VisibilitySensor>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='about-skill-web'>
-                        <div className='about-skill-web-header'>
-                            <h1>Application Softwares</h1><span />
-                        </div>
-                        <div className='about-skill-meter-section'>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const ps = 80;
-                                        const percentage = isVisible ? ps : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={psimage}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const fig = 55;
-                                        const percentage = isVisible ? fig : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img className='about-skill-meters-img'
-                                                    src={figimage}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const word = 75;
-                                        const percentage = isVisible ? word : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={wordimage}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const excell = 80;
-                                        const percentage = isVisible ? excell : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={excelimage}
-                                                    alt="react"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-                            <div className='about-skill-meters-db'>
-                                <VisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const pp = 50;
-                                        const percentage = isVisible ? pp : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren
-                                                value={percentage}
-                                                strokeWidth={1}
-                                                styles={{
-                                                    root: {},
-                                                    path: {
-                                                        stroke: `rgba(140,206 ,14)`,
-                                                        strokeLinecap: 'butt',
-                                                        transition: 'stroke-dashoffset 1.5s ease 0s',
-                                                        transform: 'rotate(0turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    trail: {
-                                                        stroke: '#292929',
-                                                        strokeLinecap: 'butt',
-                                                        transform: 'rotate(0.25turn)',
-                                                        transformOrigin: 'center center',
-                                                    },
-                                                    text: {
-                                                        fill: '#fff',
-                                                        fontSize: '16px',
-                                                        textAlign: 'center',
-                                                    },
-                                                    background: {
-                                                        fill: '#111',
-                                                    },
-                                                }}
-                                            >
-                                                <img
-                                                    className='about-skill-meters-img'
-                                                    src={ppimage}
-                                                    alt="typescript"
-                                                />
-                                                <div className='about-skill-meter-reading'>
-                                                    <strong>{`${percentage}%`}</strong>
-                                                </div>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}
-                                </VisibilitySensor>
-                            </div>
-
-                        </div>
-
-                    </div> */}
-
-                    <div className='about-skill-tab1'>
-                        <div className='content-skills'>
-                            <div className='front-end-div'>
-                                <div className='front-end-div-header'>
-                                    <span>Front End</span>
-                                </div>
-                                <div className='front-end-tech'>
-                                    <FontAwesomeIcon icon={faReact} />
-                                    <FontAwesomeIcon icon={faAngular} />
-                                    <FontAwesomeIcon icon={faHtml5} />
-                                    <FontAwesomeIcon icon={faCss3Alt} />
-                                    <FontAwesomeIcon icon={faJs} />
-                                </div>
-                            </div>
-                            <div className='back-end-div'>
-                                <div className='back-end-div-header'>
-                                    <span>Back End</span>
-                                </div>
-                                <div className='back-end-tech'>
-                                    <FontAwesomeIcon icon={faNodeJs} />
-                                    <FontAwesomeIcon icon={faPython} />
-                                    <img src={sqlimg} />
-                                    <img src={mongoimg} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className='content-skill2'>
-                            <div className='app-div-header'>
-                                <span>Applications</span>
-                            </div>
-                            <div className='app-tech'>
-                                <FontAwesomeIcon icon={faGithub} />
-                                <img src={postimg} className='postman' />
-                                <FontAwesomeIcon icon={faFigma} />
-                                <img src={vsimg} className='vscode' />
-                                <img src={wordimage} className='wordms' />
-                                <img src={excelimage} className='excel' />
-                                <img src={ppimage} className='powerpoint' />
-                                <img src={psimage} className='photoshop' />
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-
-            <div className='section-header' style={{ marginTop: "50px" }}>
-                <div className='about-section-background'>
-                    <h1>History of My Life</h1>
-                </div>
-                <div className='about-title-section'>
-                    <h1>Education <span className='gradient-color'>&</span>Experience</h1>
-                </div>
-            </div>
-
             <div className='about-info exp-edu lap-exp'>
-                <ul class="timeline">
+                <ul className="timeline">
                     <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Freelancer</span>
-                                <span class="time-wrapper"><span class="time">2023 - present</span></span>
+                        <div className="direction-r">
+                            <div className="flag-wrapper">
+                                <span className="flag">Freelancer</span>
+                                <span className="time-wrapper"><span className="time">2023 - present</span></span>
                             </div>
-                            <div class="desc">MERN Stack Developer!</div>
+                            <div className="desc">MERN Stack Developer!</div>
                         </div>
                     </li>
                     <li>
-                        <div class="direction-l">
-                            <div class="flag-wrapper">
-                                <span class="flag">Pratian Technologies </span>
-                                <span class="time-wrapper"><span class="time">2022 Nov - 2023 May</span></span>
+                        <div className="direction-l">
+                            <div className="flag-wrapper">
+                                <span className="flag">Pratian Technologies </span>
+                                <span className="time-wrapper"><span className="time">2022 Nov - 2023 May</span></span>
                             </div>
-                            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                            <div className="desc">First Employer, worked on technologies like openEdx, ReactJS, TypeScript for multiple projects.</div>
                         </div>
                     </li>
                     <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Jyothi Engineering College</span>
-                                <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
+                        <div className="direction-r">
+                            <div className="flag-wrapper">
+                                <span className="flag">Jyothi Engineering College</span>
+                                <span className="time-wrapper"><span className="time">2017 - 2021</span></span>
                             </div>
-                            <div class="desc">B.Tech in Computer Science Engineering</div>
+                            <div className="desc">B.Tech in Computer Science Engineering</div>
                         </div>
                     </li>
 
@@ -1105,32 +443,32 @@ const About = () => {
                     <span>Experience <span className='gradient-color'>& </span>Education </span>
 
                 </div>
-                <ul class="timeline">
+                <ul className="timeline">
                     <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Freelancer</span>
-                                <span class="time-wrapper"><span class="time">2023 - present</span></span>
+                        <div className="direction-r">
+                            <div className="flag-wrapper">
+                                <span className="flag">Freelancer</span>
+                                <span className="time-wrapper"><span className="time">2023 - present</span></span>
                             </div>
-                            <div class="desc">MERN Stack Developer!</div>
+                            <div className="desc">MERN Stack Developer!</div>
                         </div>
                     </li>
                     <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Pratian Technologies </span>
-                                <span class="time-wrapper"><span class="time">2022 Nov - 2023 May</span></span>
+                        <div className="direction-r">
+                            <div className="flag-wrapper">
+                                <span className="flag">Pratian Technologies </span>
+                                <span className="time-wrapper"><span className="time">2022 Nov - 2023 May</span></span>
                             </div>
-                            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                            <div className="desc">First Employer, worked on technologies like openEdx, ReactJS for multiple projects.</div>
                         </div>
                     </li>
                     <li>
-                        <div class="direction-r">
-                            <div class="flag-wrapper">
-                                <span class="flag">Jyothi Engineering College</span>
-                                <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
+                        <div className="direction-r">
+                            <div className="flag-wrapper">
+                                <span className="flag">Jyothi Engineering College</span>
+                                <span className="time-wrapper"><span className="time">2017 - 2021</span></span>
                             </div>
-                            <div class="desc">B.Tech in Computer Science Engineering</div>
+                            <div className="desc">B.Tech in Computer Science Engineering</div>
                         </div>
                     </li>
 

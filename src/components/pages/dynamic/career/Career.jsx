@@ -1,13 +1,5 @@
-import React, { useState, useEffect } from 'react';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faNode, faSquareJs, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faCloudArrowDown } from '@fortawesome/free-solid-svg-icons';
-
-import courseraImage from '../../../items/images/certificates/coursera.jpeg'
-import guviImage from '../../../items/images/certificates/guvi.png'
-import bishopImage from '../../../items/images/certificates/bishop.jpg'
-
+import React, { useState } from 'react';
+import { Icon } from '@iconify-icon/react';
 
 const Career = () => {
     const [imgs, setImgs] = useState("banner");
