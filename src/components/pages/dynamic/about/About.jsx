@@ -131,6 +131,14 @@ const About = () => {
                 </div>
 
             </div>
+            <div className='section-header' style={{ marginTop: "10px" }}>
+                <div className='about-section-background'>
+                    <h1>Showcasing</h1>
+                </div>
+                <div className='about-title-section'>
+                    <h1>My <span className='gradient-color'>Skills</span></h1>
+                </div>
+            </div>
 
             <div className='section-header-mob' style={{ marginTop: "10px" }}>
                 <div className='about-section-background'>
@@ -237,9 +245,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
 
@@ -382,6 +388,16 @@ const About = () => {
                     <h1>Education <span className='gradient-color'>&</span>Experience</h1>
                 </div>
             </div>
+            <div className='section-header-mob' style={{ marginTop: "50px" }}>
+                <div className='about-section-background'>
+                    <h1>History</h1>
+                </div>
+                <div className='about-title-section'>
+                    <h1>Edu <span className='gradient-color'>&</span>Exp</h1>
+                </div>
+            </div>
+
+
             <div className='exp-period-section'>
                 <div className='exp-period'>
                     <div className='exp-number'>
@@ -438,11 +454,6 @@ const About = () => {
             </div>
 
             <div className='about-info exp-edu mob-exp'>
-                <div className='about-skill-details-header'>
-                    <span>   </span>
-                    <span>Experience <span className='gradient-color'>& </span>Education </span>
-
-                </div>
                 <ul className="timeline">
                     <li>
                         <div className="direction-r">
