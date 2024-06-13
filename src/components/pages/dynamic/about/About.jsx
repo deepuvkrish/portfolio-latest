@@ -131,12 +131,12 @@ const About = () => {
                 </div>
 
             </div>
-            <div className='section-header' style={{ marginTop: "10px" }}>
-                <div className='about-section-background'>
-                    <h1>Showcasing</h1>
+            <div className='section-header' style={{ marginTop: "80px" }}>
+                <div className='about-section-background '>
+                    <h1 className='headerbackscroll'>Showcasing</h1>
                 </div>
                 <div className='about-title-section'>
-                    <h1>My <span className='gradient-color'>Skills</span></h1>
+                    <h1 className='headerscroll'>My <span className='gradient-color'>Skills</span></h1>
                 </div>
             </div>
 
@@ -160,23 +160,23 @@ const About = () => {
                                     <span>Front End</span>
                                 </div>
                                 <div className='front-end-tech'>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <FontAwesomeIcon icon={faReact} />
                                         <span className='tech-title'>React JS</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <FontAwesomeIcon icon={faAngular} />
                                         <span className='tech-title'>Angular JS</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <FontAwesomeIcon icon={faJs} />
                                         <span className='tech-title'>JavaScript</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <FontAwesomeIcon icon={faHtml5} />
                                         <span className='tech-title'>html 5</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <FontAwesomeIcon icon={faCss3Alt} />
                                         <span className='tech-title'>css 3</span>
                                     </div>
@@ -187,19 +187,19 @@ const About = () => {
                                     <span>Back End</span>
                                 </div>
                                 <div className='back-end-tech'>
-                                    <div>
+                                    <div className='headerbackscrolllinksright'>
                                         <FontAwesomeIcon icon={faNodeJs} />
                                         <span className='tech-title'>Node JS</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksright'>
                                         <FontAwesomeIcon icon={faPython} />
                                         <span className='tech-title'>Python</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksright'>
                                         <img src={sqlimg} alt='mysql icon' className='sqls' />
                                         <span className='tech-title'>mysql</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksright'>
                                         <img src={mongoimg} alt='mongo db icon' className='mongos' />
                                         <span className='tech-title'>mongo DB</span>
                                     </div>
@@ -211,35 +211,35 @@ const About = () => {
                                 <span>Applications</span>
                             </div>
                             <div className='app-tech'>
-                                <div>
+                                <div className='headerbackscrolllinksdown'>
                                     <FontAwesomeIcon icon={faGithub} />
                                     <span className='tech-title'>Github</span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown1'>
                                     <img src={postimg} className='postman' alt='postman icon' />
                                     <span className='tech-title'>Postman</span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown2'>
                                     <FontAwesomeIcon icon={faFigma} />
                                     <span className='tech-title'>Figma</span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown3'>
                                     <img src={vsimg} className='vscode' alt='vscode icon' />
                                     <span className='tech-title'>VS code</span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown4'>
                                     <img src={wordimage} className='wordms' alt='word icon' />
                                     <span className='tech-title'>MS word</span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown5'>
                                     <img src={excelimage} className='excel' alt='excel icon' />
                                     <span className='tech-title'>Ms Excel </span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown6'>
                                     <img src={ppimage} className='powerpoint' alt='powerpoint icon' />
                                     <span className='tech-title'>Powerpoint</span>
                                 </div>
-                                <div>
+                                <div className='headerbackscrolllinksdown7'>
                                     <img src={psimage} className='photoshop' alt='ps icon' />
                                     <span className='tech-title'>Adobe PS</span>
                                 </div>
@@ -247,7 +247,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
             <div className='about-infos about-skill-section mobile-skills-section'>
                 <div className='about-skill'>
@@ -382,10 +382,10 @@ const About = () => {
 
             <div className='section-header' style={{ marginTop: "50px" }}>
                 <div className='about-section-background'>
-                    <h1>History of My Life</h1>
+                    <h1 className='headerbackscroll'>History of My Life</h1>
                 </div>
                 <div className='about-title-section'>
-                    <h1>Education <span className='gradient-color'>&</span>Experience</h1>
+                    <h1 className='headerscroll'>Education <span className='gradient-color'>&</span>Experience</h1>
                 </div>
             </div>
             <div className='section-header-mob' style={{ marginTop: "50px" }}>

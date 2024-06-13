@@ -2333,6 +2333,182 @@ a{
     content: "uvi AI for India";
     
   }
+
+  .certification-scrolls{
+    display: flex;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .certi-logos, .certi-logos ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .certi-logos ul{
+    position: relative;
+  }
+  .certi-logos ul li{
+    position: relative;
+    list-style: none;
+    animation:fade-in linear ;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end:700px
+
+  }
+  @keyframes fade-in{
+    0%{
+      transform: translateX(-200px) scale(0.8);
+      opacity: 0.2;
+    }
+    
+    100%{
+      transform: translateX(200px) scale(1);
+      opacity: 1;
+    }
+  }
+  .headerscroll{
+    animation: fadeing-right linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 400px;
+  }
+  @keyframes fadeing-right{
+    from{
+      transform: translateX(1025px);
+      opacity:0;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .headerbackscroll{
+    animation: fadeing-lefts linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:500px;
+  }
+
+
+  @keyframes fadeing-lefts{
+    from{
+      transform: translateX(-1225px);
+      opacity:0.1;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .headerbackscrolllinksleft{
+    animation: fadeing-left linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
+
+
+  @keyframes fadeing-left{
+    from{
+      transform: translateX(-125px);
+      opacity: 0;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .headerbackscrolllinksright{
+    animation: fadeing-right linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
+
+
+  @keyframes fadeing-right{
+    from{
+      transform: translateX(125px);
+      opacity: 0;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  .headerbackscrolllinksdown{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown1{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-100px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown2{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-400px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown3{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-600px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown4{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-600px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown5{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-400px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown6{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-100px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown7{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
+
+
+  @keyframes fadeing-up{
+    from{
+      transform: translateY(175px);
+      opacity: 0;
+    }
+    to{    
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
   
 
 
@@ -3680,7 +3856,3 @@ input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 } */
-
-
-
-
