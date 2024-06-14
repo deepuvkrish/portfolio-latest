@@ -1,63 +1,23 @@
 import React, { useState } from 'react';
 import { Icon } from '@iconify-icon/react';
 
+import { certifications } from '../../constants';
 
+
+function Imageaccord(props) {
+    return <li>
+        <div class="image_title">
+            <a href={props.url} >{props.title}</a>
+            <Icon icon="game-icons:click" width="1.2em" height="1.2em" className='certi-icon-hovered' />
+        </div>
+        <a href="#">
+            <img src={props.image} />
+        </a>
+    </li>
+}
 const Career = () => {
-    const [imgs, setImgs] = useState("banner");
-    const [imgsone, setImgsone] = useState("banner1");
-    const [imgstwo, setImgstwo] = useState("banner2");
-    const [imgsthree, setImgsthree] = useState("banner3");
-
-
-
-    const clickImageHover = () => {
-        if (imgs !== "banner active") {
-            setImgs('banner active');
-            setImgsone("banner1");
-            setImgstwo("banner2 ");
-            setImgsthree("banner3");
-        }
-        else {
-            setImgs("banner");
-        }
-    }
-    const clickImageHoverone = () => {
-        if (imgsone !== "banner1 active") {
-            setImgs('banner');
-            setImgsone('banner1 active');
-            setImgstwo("banner2 ");
-            setImgsthree("banner3");
-        }
-        else setImgsone("banner1");
-    }
-    const clickImageHovertwo = () => {
-        if (imgstwo !== "banner2 active") {
-            setImgs('banner');
-            setImgsone("banner1");
-            setImgstwo('banner2 active');
-            setImgsthree("banner3");
-        }
-        else setImgstwo("banner2 ");
-    }
-    const clickImageHoverthree = () => {
-        if (imgsthree !== "banner3 active") {
-            setImgs('banner');
-            setImgsone("banner1");
-            setImgstwo("banner2 ");
-            setImgsthree('banner3 active');
-        }
-        else setImgsthree("banner3");
-    }
-
-
-
-
-
     return (
         <div className='about-section'>
-
-
-
             <div className='section-header-mob'>
                 <div className='about-section-background'>
                     <h1>Achievements</h1>
@@ -74,15 +34,7 @@ const Career = () => {
                     <h1><span className='gradient-color'>Certi</span>fications</h1>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-            <div className='certification-scrolls'>
+            <div className='certification-section'>
                 <div class='certi-logos'>
                     <ul>
                         <li><Icon icon="logos:coursera" width="6rem" height="6rem" /></li>
@@ -90,42 +42,25 @@ const Career = () => {
                         <li></li>
                     </ul>
                 </div>
-            </div>
+                <div className='certi-images'>
+                    <div className="accordian">
+                        <ul>
+                            {certifications.map((img) => <Imageaccord image={img.id} title={img.title} url={img.url} />)}
+                        </ul>
+                    </div>
 
-
-
-
-
-            <div className='certi-images-section'>
-                {/* <ul className='career-certi'>
-                    <li className={imgs} onClick={clickImageHover} >
-                        <div>
-                            Q
-                            <span></span>
-                        </div>
-                    </li>
-                    <li id="wormtail" className={imgsone} onClick={clickImageHoverone} >
-                        <div>
-                            G
-                            <span></span>
-                        </div>
-                    </li>
-                    <li id="padfoot" className={imgstwo} onClick={clickImageHovertwo} >
-                        <div>
-                            C
-                            <span></span>
-                        </div>
-                    </li>
-                    <li id="prongs" className={imgsthree} onClick={clickImageHoverthree} >
-                        <div>
-                            G
-                            <span></span>
-                        </div>
-                    </li>
-                </ul> */}
-
+                </div>
 
             </div>
+
+
+
+
+
+
+
+
+
 
             <div className='achievements-header'>
 

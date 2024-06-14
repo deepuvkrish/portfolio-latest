@@ -167,8 +167,6 @@ a{
     filter: url("#gooey");
     position: relative;    
     background: rgb(42, 178, 205);
-
-
   }
   #gooey-button a{
     position: relative;
@@ -290,7 +288,6 @@ a{
     50%{transform: translateX(120px) translateY(0px)  scale(1.5) rotate(180deg);}
     75%{transform: translateX(120px) translateY(120px)  scale(1) rotate(270deg);}
     100%{transform: translateX(31px)  scale(1.5) rotate(360deg);}
-    
   }
   @keyframes iconfloat2{
     0% { transform: rotate(0deg)translateY(100px) rotate(0deg); } 
@@ -384,7 +381,7 @@ a{
   .mob-details-header{}
   .about-personal-details-tabs{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-inline: 20px;
   }
   .left-side-personal-details{
@@ -393,7 +390,7 @@ a{
   .left-side-personal-details-mob{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
   }
   .right-side-personal-details{
     display: none;
@@ -401,7 +398,7 @@ a{
   .right-side-personal-details-mob{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     align-items: flex-end;
   }
   .left-side-personal-details-mob a{
@@ -435,19 +432,19 @@ a{
     color: cyan !important;
   }
   .left-side-personal-details-mob span{
-    font-size: 10px !important;
+    font-size: 12px !important;
     font-family: Poppins, sans-serif;
     color: #828181;
     font-weight: 500;
-    margin-block: 2px;
+    margin-block: 6px;
 
   }
   .right-side-personal-details-mob span{
-    font-size: 10px !important;
+    font-size: 12px !important;
     font-family: Poppins, sans-serif;
     color: #828181;
     font-weight: 500;
-    margin-block: 2px;
+    margin-block: 6px;
 
   }
   .details-font{
@@ -472,16 +469,16 @@ a{
     align-items: center;
     position: relative;
     width: 100px;
-
+    border: 1px solid cyan;
+    border-radius: 20px;
   }
   .download-section a{
-    border: 1px solid cyan;
     display: flex;
     align-items: center;
     padding-inline:10px;
     width: 100%;
     height: 22px;
-    border-radius: 20px;
+    
     color: #fff;
     font-weight: 700;
     font-size: 10px;
@@ -489,11 +486,9 @@ a{
   .download-section a:hover{
     background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), cyan);
   }
-  .download-section svg{
+  .download-icon{
     position: absolute;
-    width: 10px;
-    height: 10px;
-    right: 10%;
+    right: 3%;
   }
 
  .about-skill-section{
@@ -727,15 +722,7 @@ a{
   .direction-r .time{
     border-radius: 0px 10px 10px 0px;
   }
-  .certi-images-section{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 999;
-    margin-top: 60px;
-  }
+
   .career-certi{
     list-style-type: none;
     display: flex;
@@ -875,13 +862,11 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .back-end-tech, .core-end-tech{
     width: 60%;
     display: flex;
     justify-content: space-evenly;
   }
-
   .app-tech{
     width: 60%;
     display: flex;
@@ -889,7 +874,6 @@ a{
     flex-direction: row;
     justify-content: space-around;
   }
-
   .about-skill-tab1 svg{
     color: #a8e3f5;
     height: 20px;
@@ -946,165 +930,146 @@ a{
   .lap-skills-section{
     display:none;
   }
-
-
-
-
-
-
-
-
-   .banner , .banner1 , .banner2 , .banner3{
-      display: flex;
-      justify-content: flex-start;
-      align-items: end;
-      width: 300px;
-      height: 40px;
-      border-radius: 20px;
-      box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
-      transition: all 0.3s ease-in-out;
-      margin-block: 10px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      text-decoration: none;
-      cursor: pointer;
-      transition: 1s;
-  }
-  .banner div , .banner1 div ,.banner2 div ,.banner3 div {
-    min-width: 40px;
-    height: 26px;
-    border-radius: 0px 20px;
-    background-color: rgba(30, 39, 46, 0.7);
-    box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
-    color: #D7D9CE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    overflow: hidden;
-    font-size: 12px;
-    padding-inline: 5px;
-  }
-  .banner {
-    background-image: url('./components/items/images/certificates/bishop.jpg');
-    filter:  grayscale(1);
-    transition: 1s;
   
+  .headerscroll{
+    animation: fadeing-right linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 90vh;
   }
-  .banner:hover div{
-    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
+  @keyframes fadeing-right{
+    0% {
+      transform: translateX(12em);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0em);
+      opacity: 1;
+    }
   }
-  .banner:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner.active {
-    height: 200px;
-  }
-  .banner.active div span::before {
-    content: "uiz";
-  }  
-  .banner1 {
-    background-image: url('./components/items/images/certificates/guvi.png');
-    filter:  grayscale(1);
-    transition: 1s;
-  }
-  .banner1:hover div{    
-    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
-
-  }
-  .banner1:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner1.active {
-        height: 180px;
-
-  }
-  .banner1.active div span::before {
-    content: "uvi AI for India";
-  }
-  
-  
-  .banner2 {
-    background-image: url('./components/items/images/certificates/coursera.jpeg');
-    filter: grayscale(1);
-    transition: 1s;
-  }
-  .banner2:hover div{   
-    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
-  }
-  .banner2.active {
-          height: 190px;
-
-  }
-  .banner2:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner2.active div span::before {
-    content: "oursera Python";
-  }
-  
-  .banner3 {
-    background-image: url('./components/items/images/certificates/guvi.png');
-    filter: grayscale(1);
-    transition: 1s;
-  }
-  .banner3:hover div{
-    background: -webkit-linear-gradient(45deg, rgb(0, 115, 255), rgb(1, 65, 105));
-   
-  }
-  .banner3:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner3.active {
-          height: 200px;
-
-  }
-  .banner3.active div span::before {
-    content: "uvi AI for India";
-    
+  .headerbackscroll{
+    animation: fadeing-lefts linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:90vh;
   }
 
 
- 
+  @keyframes fadeing-lefts{
+    from{
+      transform: translateX(-12em);
+      opacity:0.1;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .headerbackscrolllinksleft{
+    animation: fadeing-left linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
 
 
+  @keyframes fadeing-left{
+    from{
+      transform: translateX(-125px);
+      opacity: 0;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .headerbackscrolllinksright{
+    animation: fadeing-rights linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
+  @keyframes fadeing-rights{
+    from{
+      transform: translateX(125px);
+      opacity: 0;
+    }
+    to{    
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  .headerbackscrolllinksdown{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown1{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-100px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown2{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-400px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown3{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-600px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown4{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-600px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown5{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-400px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown6{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:-100px;
+    animation-range-end:50vh;
+
+  }
+  .headerbackscrolllinksdown7{
+    animation: fadeing-up linear;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end:50vh;
+
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @keyframes fadeing-up{
+    from{
+      transform: translateY(175px);
+      opacity: 0;
+    }
+    to{    
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 
 
 
@@ -1151,8 +1116,6 @@ a{
     border-radius: 0px 50px 0px 50px;
   }
   .contact-web-details a{margin-right: 10px; }
-  
-
 
   .slider-thumb-custom{
     position: relative;
@@ -1176,6 +1139,37 @@ a{
     
     z-index: -1;
     -webkit-animation: sliderShape 5s linear infinite;
+  }
+  /* CONTACT */
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 20px;
+  }
+  .input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .styled-input.wide {
+    width: 100%;
+  }
+  .styled-input  input, textarea {
+    padding: 5px 0px 5px 0px;
+    border: 0;
+    border: 0;
+    width: 80%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+  }
+  .styled-input{
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row-reverse;
   }
 
 
@@ -1246,45 +1240,76 @@ a{
   }
 
 
+  /* Certification */
 
+    .accordian {
+        width: 100vw;
+        height: 100%;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .accordian ul {
+        width: 80%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
 
+      }
+      .accordian li {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 70px;
+          border-left: 1px solid #888;
+          box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+          -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          border-radius: 20px;
+      }
+      .accordian ul:hover li {
+          height: 150%;
+      }
+      .accordian li img {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
+      }
+      .image_title {
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          left: 0;
+          width: 100%;
+          bottom: 10px;
+          opacity: 0;
+      }
+      .image_title a {
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          font-size: 16px;
+      }
+      .image_title:hover{
+        background: rgba(0, 0, 0, 0.801);
+        opacity: 1;
 
-
-
-
-
-    /* CONTACT */
-    .contact-section{
-      display: flex;
-      flex-direction: column;
-      width: 90vw;
-      padding: 20px;
-    }
-    .input-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .styled-input.wide {
-      width: 100%;
-    }
-    .styled-input  input, textarea {
-      padding: 5px 0px 5px 0px;
-      border: 0;
-      border: 0;
-      width: 80%;
-      font-size: 1rem;
-      background-color: #2d2d2d;
-      color: white;
-      border-radius: 4px;
-    }
-    .styled-input{
-      position: relative;
-      border-radius: 4px;
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
+      }
+      .image_title:hover a{
+        color: #00ff00;
+      }
   
 
 
@@ -1330,7 +1355,6 @@ a{
     color: #fff;
     
   }
-
   /* <------- HOME SECTION -------> */
   .home-section{
     display: flex;
@@ -1714,16 +1738,16 @@ a{
     align-items: center;
     position: relative;
     width: 140px;
+    border: 1px solid #b9e313;
+    border-radius: 20px;
 
   }
   .download-section a{
-    border: 1px solid #b9e313;
     display: flex;
     align-items: center;
     padding-inline:20px;
     width: 100%;
     height: 30px;
-    border-radius: 20px;
     color: #fff;
     font-weight: 500;
     font-size: 12px;
@@ -1731,7 +1755,7 @@ a{
   .download-section a:hover{
     
   }
- .download-section svg{
+ .download-icon{
   position: absolute;
   width: 20px;
   height: 20px;
@@ -2199,151 +2223,20 @@ a{
 
 
   /*<================================================ CAREER PAGE ==================================================================> */
-  .certi-images-section{
+  .certification-section{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 320px;
-    position: relative;
-    z-index: 999;
-    margin-inline: 50px;
-  }
-
-  .career-certi{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 30px 5px 30px 5px;
-    width: 100vw;
-  }
-  .banner , .banner1 , .banner2 , .banner3{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 40px;
-    height: 400px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
-    transition: all 0.3s ease-in-out;
-    padding: 0 5px;
-    margin: 3px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 1s;
-    
-
-  }
-  .banner div , .banner1 div ,.banner2 div ,.banner3 div {
-    min-width: 30px;
-    height: 30px;
-    padding: 7px;
-    border-radius: 15px;
-    background-color: rgba(30, 39, 46, 0.7);
-    box-shadow: 1px 1px 10px rgba(215, 217, 206, 0.1);
-    color: #D7D9CE;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    overflow: hidden;
-  }
-  .banner {
-    background-image: url('./components/items/images/certificates/bishop.jpg');
-    filter: blur(1px) grayscale(1);
-    transition: 1s;
-
-  }
-  .banner:hover div{
-    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
-
-  }
-  .banner:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner.active {
-    width: 50%;
-  }
-  .banner.active div span::before {
-    content: "uiz";
-  }
-  .banner1 {
-    background-image: url('./components/items/images/certificates/guvi.png');
-    filter: blur(1px) grayscale(1);
-    transition: 1s;
-  }
-  .banner1:hover div{
-    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
-
-  }
-  .banner1:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner1.active {
-    width: 50%;
-  }
-  .banner1.active div span::before {
-    content: "uvi AI for India";
-  }
-  .banner2 {
-    background-image: url('./components/items/images/certificates/coursera.jpeg');
-    filter: blur(1px) grayscale(1);
-    transition: 1s;
-  }
-  .banner2:hover div{
-    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
-
-  }
-  .banner2.active {
-      width: 50%;
-  }
-  .banner2:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner2.active div span::before {
-    content: "oursera Python";
-  }
-  .banner3 {
-    background-image: url('./components/items/images/certificates/guvi.png');
-    filter: blur(1px) grayscale(1);
-    transition: 1s;
-  }
-  .banner3:hover div{
-    background: -webkit-linear-gradient(45deg,#b9e313,rgb(12, 146, 0));
-
-  }
-  .banner3:hover{
-    filter: blur(0) grayscale(0);
-    transition: 1s;
-    background-size: cover;
-  }
-  .banner3.active {
-      width: 50%;
-  }
-  .banner3.active div span::before {
-    content: "uvi AI for India";
-    
-  }
-
-  .certification-scrolls{
-    display: flex;
-    width: 95vw;
-    justify-content: center;
-    align-items: center;
-  }
-  .certi-logos, .certi-logos ul{
-    display: flex;
-    justify-content: space-evenly;
     width: 100%;
+  }
+  .certi-logos{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  .certi-logos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .certi-logos ul{
     position: relative;
@@ -2359,157 +2252,253 @@ a{
   }
   @keyframes fade-in{
     0%{
-      transform: translateX(-200px) scale(0.8);
+      transform: translateY(-200px) scale(0.8);
       opacity: 0.2;
     }
     
     100%{
-      transform: translateX(200px) scale(1);
+      transform: translateY(200px) scale(1);
       opacity: 1;
     }
-  }
-  .headerscroll{
-    animation: fadeing-right linear;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 400px;
-  }
-  @keyframes fadeing-right{
-    from{
-      transform: translateX(1025px);
-      opacity:0;
-    }
-    to{    
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-  .headerbackscroll{
-    animation: fadeing-lefts linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:500px;
-  }
+  } 
+  .certi-images{
+    display: flex;
+    width:75%;
+    justify-content: flex-start;
+    background: rgba(125, 124, 124, 0.4);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(146, 145, 145, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 12px;
 
-
-  @keyframes fadeing-lefts{
-    from{
-      transform: translateX(-1225px);
-      opacity:0.1;
-    }
-    to{    
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-  .headerbackscrolllinksleft{
-    animation: fadeing-left linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:50vh;
-
-  }
-
-
-  @keyframes fadeing-left{
-    from{
-      transform: translateX(-125px);
-      opacity: 0;
-    }
-    to{    
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-  .headerbackscrolllinksright{
-    animation: fadeing-right linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:50vh;
-
-  }
-
-
-  @keyframes fadeing-right{
-    from{
-      transform: translateX(125px);
-      opacity: 0;
-    }
-    to{    
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  .headerbackscrolllinksdown{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown1{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:-100px;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown2{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:-400px;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown3{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:-600px;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown4{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:-600px;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown5{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:-400px;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown6{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:-100px;
-    animation-range-end:50vh;
-
-  }
-  .headerbackscrolllinksdown7{
-    animation: fadeing-up linear;
-    animation-timeline: view();
-    animation-range-start:cover;
-    animation-range-end:50vh;
-
-  }
-
-
-  @keyframes fadeing-up{
-    from{
-      transform: translateY(175px);
-      opacity: 0;
-    }
-    to{    
-      transform: translateY(0px);
-      opacity: 1;
-    }
   }
   
+  
+
+
+   /* <============================ sideways expanding card==============================> */
+
+   .accordian {
+    width:90%;
+    height: 320px;
+    overflow: hidden;
+    }
+    .accordian ul {
+        width: 1000px;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .accordian li {
+        position: relative;
+        display: block;
+        width: 160px;
+        height: 150%;
+        float: left;
+        border-left: 1px solid #888;
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        border-radius: 20px;
+    }
+    .accordian ul:hover li {
+        width: 40px;
+    }
+    .accordian ul li:hover {
+        width: 640px;
+    }
+    .accordian li img {
+        display: flex;
+        height: 100%;
+        border-radius: 20px;
+        border-radius: 20px;
+    }
+    .image_title {
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0;
+        width: 640px;
+        bottom: 11em;
+        display: flex;
+        align-items: center;
+    }
+    .image_title a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 16px;
+    }
+    .image_title:hover{
+      background: rgba(0, 0, 0, 0.801);
+    }
+    .image_title:hover a{
+      background: -webkit-linear-gradient(45deg, #b9e313, rgb(12, 146, 0));
+      background-clip: text;
+      color: transparent;
+      background-size: 200%;
+      animation: gradient 2s linear infinite alternate;
+    }
+    @keyframes gradient{
+      0%{
+        background-position: 0%;
+      }
+      100%{
+        background-position: 100%;
+      }
+    }
+
+    .image_title:hover .certi-icon-hovered{
+      animation: 1s scaling infinite;
+    }
+    @keyframes scaling{
+      0%{transform:scale(1);}
+      50%{transform: scale(1.5);}
+      100%{transform: scale(1);}
+    }
+  
+    
+    
+   
+    .headerscroll{
+      animation: fadeing-right linear;
+      animation-timeline: view();
+      animation-range-start: cover;
+      animation-range-end: 400px;
+    }
+    @keyframes fadeing-right{
+      from{
+        transform: translateX(1025px);
+        opacity:0;
+      }
+      to{    
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+    .headerbackscroll{
+      animation: fadeing-lefts linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:500px;
+    }
+    @keyframes fadeing-lefts{
+      from{
+        transform: translateX(-1225px);
+        opacity:0.1;
+      }
+      to{    
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+    .headerbackscrolllinksleft{
+      animation: fadeing-left linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:50vh;
+
+    }
+    @keyframes fadeing-left{
+      from{
+        transform: translateX(-125px);
+        opacity: 0;
+      }
+      to{    
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+    .headerbackscrolllinksright{
+      animation: fadeing-right linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:50vh;
+
+    }
+    @keyframes fadeing-right{
+      from{
+        transform: translateX(125px);
+        opacity: 0;
+      }
+      to{    
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+    .headerbackscrolllinksdown{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown1{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:-100px;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown2{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:-400px;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown3{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:-600px;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown4{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:-600px;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown5{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:-400px;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown6{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:-100px;
+      animation-range-end:50vh;
+
+    }
+    .headerbackscrolllinksdown7{
+      animation: fadeing-up linear;
+      animation-timeline: view();
+      animation-range-start:cover;
+      animation-range-end:50vh;
+
+    }
+
+
+    @keyframes fadeing-up{
+      from{
+        transform: translateY(175px);
+        opacity: 0;
+      }
+      to{    
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    
 
 
 
@@ -2771,6 +2760,7 @@ a{
 
 
 }
+
 
 
 

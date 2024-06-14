@@ -126,7 +126,7 @@ const About = () => {
                         <a href={cv} download="Resume" >
                             Download CV
                         </a>
-                        <FontAwesomeIcon icon={faDownload} size="sm" />
+                        <Icon icon="line-md:cloud-download-outline-loop" width="1.3rem" height="1.3rem" className='download-icon'/>
                     </div>
                 </div>
 
@@ -141,14 +141,13 @@ const About = () => {
             </div>
 
             <div className='section-header-mob' style={{ marginTop: "10px" }}>
-                <div className='about-section-background'>
-                    <h1>Showcasing</h1>
+                <div className='about-section-background '>
+                    <h1 className='headerbackscroll'>Showcasing</h1>
                 </div>
                 <div className='about-title-section'>
-                    <h1>My <span className='gradient-color'>Skills</span></h1>
+                    <h1 className='headerscroll'>My <span className='gradient-color'>Skills</span></h1>
                 </div>
             </div>
-
 
 
             <div className='about-infos about-skill-section lap-skills-section'>
@@ -258,27 +257,27 @@ const About = () => {
                                     <span>Front End</span>
                                 </div>
                                 <div className='front-end-tech'>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <Icon icon="logos:react" width="1.3rem" height="1.3rem" />
                                         <span className='tech-title'>React JS</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <Icon icon="devicon:angularjs" width="1.3rem" height="1.3rem" />
                                         <span className='tech-title'>Angular JS</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <Js color='plain' />
                                         <span className='tech-title'>JavaScript</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <Icon icon="logos:php" width="1.3rem" height="1.3rem" />
                                         <span className='tech-title'>Php</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <Icon icon="devicon:html5" width="1.3rem" height="1.3rem" />
                                         <span className='tech-title'>html 5</span>
                                     </div>
-                                    <div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <Icon icon="devicon:css3" width="1.3rem" height="1.3rem" />
                                         <span className='tech-title'>css 3</span>
                                     </div>
@@ -390,10 +389,10 @@ const About = () => {
             </div>
             <div className='section-header-mob' style={{ marginTop: "50px" }}>
                 <div className='about-section-background'>
-                    <h1>History</h1>
+                    <h1 className='headerbackscroll'>History</h1>
                 </div>
                 <div className='about-title-section'>
-                    <h1>Edu <span className='gradient-color'>&</span>Exp</h1>
+                    <h1 className='headerscroll'>Edu <span className='gradient-color'>&</span>Exp</h1>
                 </div>
             </div>
 
