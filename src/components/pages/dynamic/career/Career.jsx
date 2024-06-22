@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { Icon } from '@iconify-icon/react';
 
-import { certifications } from '../../constants';
+import { certifications, certificationsmob } from '../../constants';
 import { guvilogo, greatlearning } from '../../assets'
 
 function CertificateGenerator(props) {
     return (
-        <div className='slider' style={{ backgroundImage: `url(${props.certification})` }}>
-            <div className='certification-details'>
-                <p>{props.title}</p>
-                <a href={props.verfication}>Verify Here</a>
+        <li>
+            <div className="card">
+                <a href="">
+                    <span className="model-name">{props.imgfrom}</span>
+                    <span>{props.imgtitle}</span>
+                </a>
             </div>
-        </div>
+        </li>
     )
 }
 
@@ -28,6 +30,7 @@ function Sample(props) {
         </li>
     )
 }
+
 
 const Career = () => {
     return (
@@ -49,7 +52,7 @@ const Career = () => {
                 </div>
             </div>
 
-            <div className="scene">
+            <div className="scene scene-lap">
                 <div className="left-zone">
                     <ul className="list">
                         {certifications.map((certi) => <Sample imgid={certi.id} imglogo={certi.idicon} imgtitle={certi.title} imgfrom={certi.from} imgurl={certi.url} imageid={certi.classid} imagecls={certi.classnm} />)}
@@ -57,6 +60,38 @@ const Career = () => {
                 </div>
                 <div className="middle-border"></div>
                 <div className="right-zone"></div>
+            </div>
+
+
+
+            <div className='scene-mob'>
+
+                <div className="void" id="void">
+                    <div className="crop">
+                        <ul id="card-list">
+                            {certificationsmob.map((certi) => <CertificateGenerator imgid={certi.id} imglogo={certi.idicon} imgtitle={certi.title} imgfrom={certi.from} imgurl={certi.url} imageid={certi.classid} imagecls={certi.classnm} />)}
+                        </ul>
+                        <div className="second-circle"></div>
+                    </div>
+                    <div className="mask"></div>
+                    <div className="center-circle"></div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className='section-header-mob'>
+                <div className='about-title-section'>
+                    <h1>Achieve<span className='gradient-color'>ments</span></h1>
+                </div>
+            </div>
+            <div className='section-header'>
+                <div className='about-title-section'>
+                    <h1>Achieve<span className='gradient-color'>ments</span></h1>
+                </div>
             </div>
 
 
