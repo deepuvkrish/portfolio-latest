@@ -2,19 +2,33 @@ import React, { useState } from 'react';
 import { Icon } from '@iconify-icon/react';
 
 import { certifications } from '../../constants';
+import { guvilogo, greatlearning } from '../../assets'
 
-
-function Imageaccord(props) {
-    return <li>
-        <div class="image_title">
-            <a href={props.url} >{props.title}</a>
-            <Icon icon="game-icons:click" width="1.2em" height="1.2em" className='certi-icon-hovered' />
+function CertificateGenerator(props) {
+    return (
+        <div className='slider' style={{ backgroundImage: `url(${props.certification})` }}>
+            <div className='certification-details'>
+                <p>{props.title}</p>
+                <a href={props.verfication}>Verify Here</a>
+            </div>
         </div>
-        <a href="#">
-            <img src={props.image} />
-        </a>
-    </li>
+    )
 }
+
+function Sample(props) {
+    return (
+        <li className='item'>
+            <input type="radio" id={props.imgfrom} name='basic_carousel' value={props.imgfrom} checked />
+            <label className={props.imageid} for={props.imgfrom}>{props.imgfrom}</label>
+            <div className={props.imagecls}>
+                <span className='picto'></span>
+                <h2>{props.imgtitle} </h2>
+                <a href={props.imgurl} target='__blank'> Verify {props.imgfrom} Certificate here</a>
+            </div>
+        </li>
+    )
+}
+
 const Career = () => {
     return (
         <div className='about-section'>
@@ -34,24 +48,56 @@ const Career = () => {
                     <h1><span className='gradient-color'>Certi</span>fications</h1>
                 </div>
             </div>
-            <div className='certification-section'>
-                <div class='certi-logos'>
-                    <ul>
-                        <li><Icon icon="logos:coursera" width="6rem" height="6rem" /></li>
-                        <li><Icon icon="devicon:googlecloud-wordmark" width="6rem" height="6rem" /></li>
-                        <li></li>
+
+            <div className="scene">
+                <div className="left-zone">
+                    <ul className="list">
+                        {certifications.map((certi) => <Sample imgid={certi.id} imglogo={certi.idicon} imgtitle={certi.title} imgfrom={certi.from} imgurl={certi.url} imageid={certi.classid} imagecls={certi.classnm} />)}
                     </ul>
                 </div>
-                <div className='certi-images'>
-                    <div className="accordian">
-                        <ul>
-                            {certifications.map((img) => <Imageaccord image={img.id} title={img.title} url={img.url} />)}
-                        </ul>
-                    </div>
-
-                </div>
-
+                <div className="middle-border"></div>
+                <div className="right-zone"></div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,6 +119,10 @@ const Career = () => {
                     <polygon className="hc-3 cls-1" points="102.51 282.88 32.42 270.02 8.52 202.89 54.7 148.63 124.79 161.49 148.69 228.62 102.51 282.88" />
                 </svg>
             </div>
+
+
+
+
 
         </div >
     )
