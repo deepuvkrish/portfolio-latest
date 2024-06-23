@@ -2944,6 +2944,10 @@ a{
   .scene-lap{
     display: flex;
   }
+
+  .scene-mob {
+    display: none;
+}
   .scene {
     align-items: center;
     justify-content: left;

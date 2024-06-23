@@ -4,6 +4,7 @@ import bishop from '../../items/images/certificates/bishop.jpg'
 import guvilogo from '../../items/images/logos/guvi.png'
 import greatlearning from '../../items/images/logos/gl.svg'
 import courseraicon from '../../items/images/logos/coursera.png'
+import vidhyacert from '../../items/images/certificates/vidhya.jpg'
 
 
 
@@ -13,5 +14,6 @@ export {
     bishop,
     guvilogo,
     greatlearning,
-    courseraicon
+    courseraicon,
+    vidhyacert,
 };

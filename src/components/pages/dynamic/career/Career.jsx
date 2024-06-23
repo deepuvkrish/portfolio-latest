@@ -65,7 +65,6 @@ const Career = () => {
 
 
             <div className='scene-mob'>
-
                 <div className="void" id="void">
                     <div className="crop">
                         <ul id="card-list">
