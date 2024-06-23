@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFreeCodeCamp, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { profile } from '../../assets';
 
 
 
@@ -31,6 +32,7 @@ const Home = () => {
             </div>
             <div className='home-image-section'>
                 <div className='image-background'>
+                    <img src={profile} alt='profileimage' className='home-img'/>
                     <FontAwesomeIcon icon={faCode} style={{ color: "#ffffff", }} className='image-icons-one' />
                     <FontAwesomeIcon icon={faFreeCodeCamp} style={{ color: "#ffffff", }} className='image-icons-two' />
                     <div className="slider-thumb-custom"></div>

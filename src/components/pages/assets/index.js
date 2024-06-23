@@ -5,6 +5,7 @@ import guvilogo from '../../items/images/logos/guvi.png'
 import greatlearning from '../../items/images/logos/gl.svg'
 import courseraicon from '../../items/images/logos/coursera.png'
 import vidhyacert from '../../items/images/certificates/vidhya.jpg'
+import profile from '../../items/images/my/pro.png'
 
 
 
@@ -16,4 +17,5 @@ export {
     greatlearning,
     courseraicon,
     vidhyacert,
+    profile,
 };

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Icon } from '@iconify-icon/react';
+import React from 'react';
+// import { Icon } from '@iconify-icon/react';
 
 import { certifications, certificationsmob } from '../../constants';
-import { guvilogo, greatlearning } from '../../assets'
+// import { guvilogo, greatlearning } from '../../assets'
 
 function CertificateGenerator(props) {
     return (
         <li>
             <div className="card">
-                <a href="">
+                <a href={props.imgurl}>
                     <span className="model-name">{props.imgfrom}</span>
                     <span>{props.imgtitle}</span>
                 </a>
