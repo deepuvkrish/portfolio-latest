@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser';
 import { Icon } from '@iconify-icon/react';
 
 import { } from '@fortawesome/free-solid-svg-icons';
-
+import Graphics from './Graphics';
+import Floatbutton from '../../blocks/Floatbutton';
 
 
 const Contact = () => {
@@ -31,9 +32,12 @@ const Contact = () => {
     return (
         <div className='contact-section'>
             <div className='contact-intro'>
+                <div className='image-sensor'></div>
+
                 <div className='contact-intro-box'>
                     <div className='contact-intro-box-left'>
                         <h1>Get in touch.</h1>
+                        <Graphics />
                     </div>
                     <div className='contact-intro-box-right'>
                         <div className='contact-address cnt'>
@@ -84,12 +88,43 @@ const Contact = () => {
                     </div>
 
                 </div>
-
             </div>
             <div className='contact-form'>
                 <div className='contact-form-box'>
+                    <div className='contact-intro-box'>
+                        <div className='contact-intro-box-left'>
+                            <h2>Start a Conversation.</h2>
+                            <p>Have any projects? Hire me? Discuss Ideas?</p>
+                            <div className="input-container">
+                                <form ref={form} onSubmit={sendEmail}>
+                                    <div className="formbox">
+                                        <label>Name</label>
+                                        <input type="text" name="user_name" required />
+                                    </div>
+                                    <div className="formbox">
+                                        <label>Email</label>
+                                        <input type="email" name="user_email" required />
+                                    </div>
+                                    <div className="formbox">
+                                        <label>Phone</label>
+                                        <input type="number" name="user_phone" required />
+                                    </div>
+                                    <div className="formbox">
+                                        <label>Message</label>
+                                        <textarea name="message" required></textarea>
+                                    </div>
+                                    <button type="submit" name="send" value="Send" className='submit-btn'>Send</button>
 
-                    <h1 style={{ fontSize: '150px' }}>Coming Soon</h1>
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div className='contact-intro-box-right'>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
 

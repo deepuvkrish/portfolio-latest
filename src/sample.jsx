@@ -165,14 +165,7 @@
 //     color: white;
 //     border - radius: 4px;
 // }
-// input: focus,
-//     textarea:focus { outline: 0; }
-// input:focus ~span,
-//     textarea:focus ~span {
-//     width: 100 %;
-//     -webkit - transition: all 0.075s ease;
-//     transition: all 0.075s ease;
-// }
+
 //   textarea {
 //     width: 100 %;
 //     min - height: 15em;
@@ -182,21 +175,4 @@
 //     max - width: 100 %;
 //     margin: 20px auto 25px auto;
 // }
-//   .submit - btn {
-//     padding: 7px 35px;
-//     border - radius: 60px;
-//     display: inline - block;
-//     background - color: var(--greenText);
-//     color: white;
-//     font - size: 18px;
-//     cursor: pointer;
-//     box - shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
-//         0 2px 10px 0 rgba(0, 0, 0, 0.07);
-//     -webkit - transition: all 300ms ease;
-//     transition: all 300ms ease;
-// }
-//   .submit - btn:hover {
-//     transform: translateY(1px);
-//     box - shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
-//         0 1px 1px 0 rgba(0, 0, 0, 0.09);
-// }
+

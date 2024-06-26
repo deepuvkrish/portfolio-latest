@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import About from "../dynamic/about/About";
 
 
-const Floatbutton = () => {
+const Floatbutton = (props) => {
     return (
         <>
 
@@ -19,7 +19,7 @@ const Floatbutton = () => {
             </svg>
 
             <button id="gooey-button">
-                <Link to='/about' style={{ color: "white" }}>Know More</Link>
+                <Link to='/about' style={{ color: "white" }}>{props.title}</Link>
 
                 <span className="bubbles">
                     <span className="bubble"></span>

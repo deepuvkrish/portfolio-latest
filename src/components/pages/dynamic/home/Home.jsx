@@ -32,7 +32,7 @@ const Home = () => {
             </div>
             <div className='home-image-section'>
                 <div className='image-background'>
-                    <img src={profile} alt='profileimage' className='home-img'/>
+                    <img src={profile} alt='profileimage' className='home-img' />
                     <FontAwesomeIcon icon={faCode} style={{ color: "#ffffff", }} className='image-icons-one' />
                     <FontAwesomeIcon icon={faFreeCodeCamp} style={{ color: "#ffffff", }} className='image-icons-two' />
                     <div className="slider-thumb-custom"></div>
@@ -61,7 +61,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <Floatbutton />
+                    <Floatbutton title="Know More" />
 
                     <div className='home-links-icon'>
                         <span className='about-hov'><span className='details-font'><a href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWKvJzwGTwrMMbPzcsRkwrxHtrVNNDgVGxZcTrBlgRpdwTGWnrPRndblqmcDkNqlxVbV' target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffffff", }} /></a></span></span>
