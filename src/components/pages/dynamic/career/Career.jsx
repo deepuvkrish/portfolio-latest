@@ -2,6 +2,7 @@ import React from 'react';
 // import { Icon } from '@iconify-icon/react';
 
 import Certifications from './Certifications';
+import Achievements from './Achievements';
 
 
 
@@ -11,59 +12,9 @@ const Career = () => {
     return (
         <div className='about-section'>
             <Certifications />
+            <Achievements />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div className='achievements-header'>
-
-            </div>
 
             <div class="draw-hc2">
                 <svg className="honeycomb-svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.95 291.04">

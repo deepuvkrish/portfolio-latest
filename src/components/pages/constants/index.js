@@ -131,6 +131,16 @@ export const certificationsmob = [
     }
 ];
 
+export const achievements = [
+    {
+        aid: bishop,
+        atitle: "All India Quiz | Bishop Cottan",
+        afrom: "Bishop Cotton",
+        aurl: " ",
+        aclass: "achieve abishop",
+    }
+]
+
 
 
 

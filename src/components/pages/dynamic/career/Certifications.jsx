@@ -15,7 +15,6 @@ function CertificateGenerator(props) {
     )
 }
 
-
 function Sample(props) {
     return (
         <li className='item'>
@@ -80,16 +79,6 @@ const Certifications = () => {
 
 
 
-            <div className='section-header-mob'>
-                <div className='about-title-section'>
-                    <h1>Achieve<span className='gradient-color'>ments</span></h1>
-                </div>
-            </div>
-            <div className='section-header'>
-                <div className='about-title-section'>
-                    <h1>Achieve<span className='gradient-color'>ments</span></h1>
-                </div>
-            </div>
         </div>
     )
 }

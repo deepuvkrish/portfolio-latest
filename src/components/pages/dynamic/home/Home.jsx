@@ -33,9 +33,11 @@ const Home = () => {
             <div className='home-image-section'>
                 <div className='image-background'>
                     <img src={profile} alt='profileimage' className='home-img' />
+                    <div className="slider-thumb-custom gstc3"></div>
+
                     <FontAwesomeIcon icon={faCode} style={{ color: "#ffffff", }} className='image-icons-one' />
                     <FontAwesomeIcon icon={faFreeCodeCamp} style={{ color: "#ffffff", }} className='image-icons-two' />
-                    <div className="slider-thumb-custom"></div>
+                    <div className="slider-thumb-custom gstc1"></div>
                 </div>
 
             </div>
