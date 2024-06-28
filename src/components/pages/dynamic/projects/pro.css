@@ -25,6 +25,7 @@
     text-transform: capitalize;
     letter-spacing: 0.025em;
     font-size: clamp(1rem, 1em + 0.75vw, 1.6rem);
+    text-align: center;
   }
   section a {
     display: inline-block;
@@ -47,7 +48,7 @@
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -57,7 +58,7 @@
     text-transform: uppercase;
     color: #282828;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.55em;
     padding: 0.375rem 0.625rem;
     border-radius: 0.188rem;
   }
@@ -67,17 +68,20 @@
   section .containerp .cardp .content h3 {
     text-transform: capitalize;
     font-size: clamp(1rem, 1rem + 0.4364vw, 1.8rem);
+    text-align: center;
   }
   section .containerp .cardp .content p {
-    margin: 0.625rem 0 1.25rem;
+    margin:5px;
+    padding: 0;
     color: #565656;
+    font-size: 12px;
+    text-align: center;
   }
   section .containerp .cardp-inner {
     position: relative;
     width: inherit;
     height: 7rem;
     border-radius: 1.25rem;
-    border-bottom-right-radius: 0;
     overflow: hidden;
   }
   section .containerp .cardp-inner .boxp {
@@ -195,14 +199,17 @@
   
   }
   .project-view-title-section{
+ 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .project-view-title-section div:nth-child(1){
     width: 90%;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    margin-block-start: 15px;
   }
   .project-view-title-section div:nth-child(2){
     width: 90%;
@@ -238,6 +245,9 @@
   }
   .project-view-desc div:nth-child(1){
     width: 90%;
+    font-size: 13px;
+    line-height: 1.5em;
+    text-align: justify;
   }
   .project-view-desc div:nth-child(2){
    display: none;
