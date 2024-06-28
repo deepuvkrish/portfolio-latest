@@ -1911,7 +1911,6 @@ a{
   .gstc3{
     display: none;
   }
-
   @keyframes sliderShape{
     0%,100%{
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
@@ -2509,7 +2508,6 @@ a{
     flex-direction: row;
     justify-content: space-around;
   }
-
   .content-skill2{
     display: flex;
     flex-direction: column;
@@ -2606,12 +2604,10 @@ a{
     width: 100px;
 
   }
-
   .certi-images{
     display: flex;
     width: 80%;
   }
-
   .slider{
     flex: 1;
     transition: 700ms;
@@ -2634,20 +2630,17 @@ a{
     flex: 3;
     filter: grayscale(0);
   } 
-
   .slider:hover a{
     background: #00000084;
     padding-inline: 100px;
     padding-block: 5px;
     transition: 1s;
   }
-
   .slider a:hover{
     letter-spacing: 2px;
     transition: 1s;
     color: cyan;
   }
- 
   .certification-details{
     position: absolute;
     width: 100%;
@@ -2658,8 +2651,6 @@ a{
     text-overflow: ellipsis;
     word-wrap: break-word;   
   }
-
-
   .image_title:hover .certi-icon-hovered{
     animation: 1s scaling infinite;
   }
@@ -2668,10 +2659,6 @@ a{
     50%{transform: scale(1.5);}
     100%{transform: scale(1);}
   }
-  
-    
-    
-   
   .headerscroll{
     animation: fadeing-right linear;
     animation-timeline: view();
@@ -2806,8 +2793,6 @@ a{
       opacity: 1;
     }
   }
-
-
   .sample-cards{
     display: flex;
     flex-direction: row;
@@ -2822,44 +2807,11 @@ a{
     margin-inline: 10px;
     transition: 1s;
   }
-
   .cards_test:hover{
       flex:3;
       background-color: red;
   }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3875,7 +3827,6 @@ a{
 	transform: rotate(80deg);
 	left: 0;
 }
-
 .wave {
 	position: fixed;
 	top: 0;
@@ -3893,20 +3844,17 @@ a{
   border-radius: 43%;
   animation: drift 20s infinite linear;
 }
-
 .wave.-three {
   animation: drift 22s infinite linear;
 	position: fixed;
 	background-color: #343434;
 }
-
 .wave.-two {
   animation: drift 23s infinite linear;
   opacity: .1;
   background: black;
 	position: fixed;
 }
-
 .box:after {
   content: '';
   display: block;
@@ -3917,14 +3865,11 @@ a{
   z-index: 11;
   transform: translate3d(0, 0, 0);
 }
-
 @keyframes drift {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
 }
-
 /*LOADING SPACE*/
-
 .contain {
 	animation-delay: 4s;
 	z-index: 1000;
@@ -3948,25 +3893,21 @@ a{
   background: -webkit-linear-gradient(#434343, #1f1f1f);
   background: linear-gradient(#383939, #1d1d1d);
 }
-
 .icon {
   width: 100px;
   height: 100px;
   margin: 0 5px;
 }
-
 /*Animation*/
 .icon:nth-child(2) img {-webkit-animation-delay: 0.2s;animation-delay: 0.2s}
 .icon:nth-child(3) img {-webkit-animation-delay: 0.3s;animation-delay: 0.3s}
 .icon:nth-child(4) img {-webkit-animation-delay: 0.4s;animation-delay: 0.4s}
-
 .icon img {
   -webkit-animation: anim 12s ease infinite;
   animation: anim 12s ease infinite;
   -webkit-transform: scale(0,0) rotateZ(180deg);
   transform: scale(0,0) rotateZ(180deg);
 }
-
 @-webkit-keyframes anim{
   0% {
     -webkit-transform: scale(0,0) rotateZ(-90deg);
@@ -3985,7 +3926,6 @@ a{
     transform: scale(0,0) rotateZ(90deg);opacity:0
   }
 }
-
 @keyframes anim{
   0% {
     -webkit-transform: scale(0,0) rotateZ(-90deg);
@@ -4056,10 +3996,6 @@ a{
 
 /* EXP AND PROJECT */
 
-.exp-section-header{
-  display: flex;
-  justify-content:flex-start;
-}
 .project-section-header{
   display: flex;
   justify-content:end;
@@ -4070,211 +4006,11 @@ a{
 .c1{
   perspective: 0px; 
 }
-.techstack-view{
-  height: 40px;
-  width: 170px;
-  border-radius: 10px;
-  position: absolute;
-  padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  transition: 2s;
-  transform: translateY(5px);
-  animation: 2s ease-in-out techie;
-  cursor: pointer;
-  z-index: 1;
-}
-.techstack-hidden{
-  display: none;
-  transition: 2s;
-  cursor: pointer;
-}
-@keyframes techie{
-  0%{
-    transform: translateY(0px);
-    opacity: 10%;
-    width: 80px;
-    height: 10px;
-  }
-  100%{
-    transform: translateY(5px);
-    opacity: 100%;
-    height: 40px;
-    width: 170px;
-  }
-}
-.designation{
-
-}
-.designationtitle{
-  position: relative;
-  z-index: 3;
-}
-@keyframes projectshow{
-  0%{
-    transform: translateX(20px);
-    opacity: 10%;
-    
-  }
-  100%{
-    transform: translateX(50px);
-    opacity: 100%;
-    width: 120px;
-
-  }
-}
-.projects-summary-view{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-  border-radius: 10px;
-  padding: 10px;
-  height: 57px;
-  position: absolute;
-  right: -65%;
-  top: -130%;
-  transform: translateX(50px);
-  border: 1px groove rgb(61, 60, 60);
-  animation: 3s ease-in-out projectshow;
-  width: 120px;
-  z-index: 10;
-
-  }
-.projects-summary-hide{
-  display: none;
-}
-.dateperiod{
-  color: #818080;
-}
-.dateperiod-mob{
-  display: none;
-}
-.round{
-  background: white;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-}
-.dash{
-  width: 150px;
-  border-bottom: 1px dashed  rgba(255, 255, 255, 0.308);
-  height: 5px;
-  position: relative;
-  bottom: 2.5px;
-}
-
-
-    /* EXPERIENCE */
-    
-    
-/*    
-    .certi-image-view{
-      width: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;  
-      position: relative;
-      z-index: 10;
-    }
-    .img-view{
-      width: 400px;
-      border-radius: 10px;
-      height: 260px;
-
-    }
-    .rounded-md{
-      border-radius: 5px;
-    }
-    .certi-verification{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      z-index: 12;
-      background-color: rgb(17 17 17);
-      bottom: 0px;
-    }
-    .certi-verification a{
-      color: #c6e157;
-      font-size: 12px;
-      text-align: justify;
-      transition: 1s;
-    }
-    .certi-verification a:hover{
-      color: #87edf0;
-      font-size: 12px;
-      letter-spacing: 1.2px;
-    } */
-
- 
-/*       
-.container-certificate {
-  display: flex;
-  width: 90vw;
-  height: 50vh;
-  position: relative;
-  z-index: 999;  
-  padding-inline: 30px;
-  justify-content: center;
-} */
-
-/* .panel {
-  background-size:cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  height:100%;
-  color: #fff;
-  cursor: pointer;
-  flex: 0.05;
-  margin: 5px;
-  position: relative;
-  -webkit-transition: all 700ms ease-in;
-
-}
-.viewImage{
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-
-} */
-
-/* .panel h3 {
-  font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
-
-.panel.active {
-  flex: 0.5;
-}
-
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-} */
-
-/* @media (max-width: 480px) {
-  .container-certificate {
-    width: 95vw;
-  }
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
-} */
-    
 
 
 
 
-
-
+/* HONEYCOMB ANIMATION */
 .draw-hc{
   width: 100px;
   position: absolute;
@@ -4297,7 +4033,6 @@ a{
   width: 100px;
   margin: 20px auto;
 }
-
 .honeycomb-svg polygon {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
@@ -4315,7 +4050,6 @@ a{
   margin: 20px auto;
   opacity: 0.1;
 }
-
 .honeycomb-svg2 polygon {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
@@ -4324,8 +4058,7 @@ a{
   fill: rgb(34, 34, 34);
   background-size: cover;
 }
-
- .hc-1 {animation: 13s ring infinite;}
+.hc-1 {animation: 13s ring infinite;}
 .hc-2 {animation: 18s ring1 infinite;}
 .hc-3 {animation: 15s ring2 infinite;}
 @keyframes ring{
@@ -4382,7 +4115,6 @@ a{
   box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.1);
 
 }
-
 .honeycomb-cell_img{
   object-fit: cover;
   object-position: center;
@@ -4443,7 +4175,6 @@ a{
 .honeycomb-cell_title{
   opacity: 0;
 }
-
 .honeycomb-cell:hover
 .honeycomb-cell_img{
   filter: grayscale(0%);

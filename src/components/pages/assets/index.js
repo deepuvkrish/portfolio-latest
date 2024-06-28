@@ -7,6 +7,12 @@ import courseraicon from '../../items/images/logos/coursera.png'
 import vidhyacert from '../../items/images/certificates/vidhya.jpg'
 import profile from '../../items/images/my/pro.png'
 
+import worker from '../../items/images/lotte/working.json'
+import coding from '../../items/images/lotte/coding.json'
+import discuss from '../../items/images/lotte/discuss.json'
+import proctor from '../../items/images/lotte/proctor.json'
+import lec from '../../items/images/lotte/lecture.json'
+
 
 
 export {
@@ -18,4 +24,9 @@ export {
     courseraicon,
     vidhyacert,
     profile,
+    worker,
+    coding,
+    discuss,
+    proctor,
+    lec,
 };

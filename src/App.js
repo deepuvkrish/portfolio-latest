@@ -9,6 +9,9 @@ import About from './components/pages/dynamic/about/About';
 import Career from './components/pages/dynamic/career/Career';
 import Projects from './components/pages/dynamic/projects/Projects';
 import Contact from './components/pages/dynamic/contact/Contact';
+import SkillAssure from './components/pages/dynamic/projects/mainp/Skillassure';
+import Nadaar from './components/pages/dynamic/projects/mainp/Nadaar';
+import Padippi from './components/pages/dynamic/projects/mainp/Padippi';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
             <Route path='/career' element={<Career />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/skillassure' element={<SkillAssure />} />
+            <Route path='/nadaar' element={<Nadaar />} />
+            <Route path='/padippi' element={<Padippi />} />
           </Route>
         </Routes>
       </BrowserRouter>
