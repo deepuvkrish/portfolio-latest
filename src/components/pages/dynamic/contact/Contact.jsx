@@ -5,6 +5,8 @@ import { Icon } from '@iconify-icon/react';
 import { } from '@fortawesome/free-solid-svg-icons';
 import Graphics from './Graphics';
 import Sphereskill from './Sphereskill';
+import DisplayLottie from '../../static/DisplayLottie';
+import { contacts } from '../../assets';
 
 
 const Contact = () => {
@@ -130,6 +132,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contact-intro-box-right'>
+                        <DisplayLottie lottiename={contacts} />
+
                     </div>
 
                 </div>

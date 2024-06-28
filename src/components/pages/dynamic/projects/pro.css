@@ -7,8 +7,10 @@
 }
 
 .text-break{
-  word-break: break-all;
+  word-break:keep-all;
   overflow: hidden;
+  text-justify: inter-word;
+
 }
 .text-indent{
   text-indent: 100px;
@@ -29,14 +31,15 @@ section a {
   text-decoration: none;
 }
 section .containerp {
-  margin-top: 5em;
-  display: flex;
-  width: 100%;
-  /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
-  gap: 2rem;
+  margin-top: 3em;
+    display: flex;
+    width: 100%;
+    /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
+    gap: 2rem;
+    justify-content: center;
 }
 .cardp{
-    width:300px;
+    width:355px;
 }
 
 section .containerp .cardp ul {
@@ -188,7 +191,6 @@ section .containerp .cardp-inner .boxp .iconp .iconBoxp span {
 .project-page-overlay{
   width: 70vw;
   height: 70vh;
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,12 +203,10 @@ section .containerp .cardp-inner .boxp .iconp .iconBoxp span {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 998;
-  animation: 2s fadeInScrollVerticle ease-in-out;
+  animation: 2s fadeInScrollVerticle2 ease-in-out;
 
 }
-.project-page-overlay-skill{
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e95VGFIqc0feyQQOM6rUP1uH0uTYUdHN_w&s');
-}
+
 .project-view{
   border: 1px solid rgba(227, 227, 227, 0.19);
   display: flex;
@@ -267,8 +267,6 @@ section .containerp .cardp-inner .boxp .iconp .iconBoxp span {
 }
 .project-view-desc div:nth-child(2){
   width: 30%;
-  background-color: #fff;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e95VGFIqc0feyQQOM6rUP1uH0uTYUdHN_w&s');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -309,6 +307,14 @@ section .containerp .cardp-inner .boxp .iconp .iconBoxp span {
   100%{
     transform:translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes fadeInScrollVerticle2{
+  0%{
+    transform: translateY(100px);
+  }
+  100%{
+    transform:translateY(0px);
   }
 }
 @keyframes fadeinscroll{

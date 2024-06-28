@@ -12,6 +12,15 @@ import coding from '../../items/images/lotte/coding.json'
 import discuss from '../../items/images/lotte/discuss.json'
 import proctor from '../../items/images/lotte/proctor.json'
 import lec from '../../items/images/lotte/lecture.json'
+import adm from '../../items/images/lotte/admin.json'
+import cart from '../../items/images/lotte/shop.json'
+import contacts from '../../items/images/lotte/Contacts.json'
+import emailing from '../../items/images/lotte/email.json'
+import payment from '../../items/images/lotte/payment.json'
+import bill from '../../items/images/lotte/bill.json'
+import docs from '../../items/images/lotte/docs.json'
+import meet from '../../items/images/lotte/video.json'
+import dwn from '../../items/images/lotte/downloads.json'
 
 
 
@@ -29,4 +38,13 @@ export {
     discuss,
     proctor,
     lec,
+    adm,
+    cart,
+    contacts,
+    emailing,
+    payment,
+    bill,
+    docs,
+    meet,
+    dwn,
 };

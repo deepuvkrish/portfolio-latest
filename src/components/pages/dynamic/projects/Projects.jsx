@@ -8,16 +8,30 @@ import Miniprojects from "./Miniprojects";
 const Projects = () => {
     return (
         <div className='about-section'>
-            <div className='project-section'>
-                <div className='project-section-header'>
-                    <span className='text-larger-about glow-title'> <FontAwesomeIcon icon={faCode} size="2xs" style={{ color: "#ffffff", }} />Projects</span>
+            <div className='section-header'>
+                <div className='about-section-background'>
+                    <h1><FontAwesomeIcon icon={faCode} size="2xs" /> Experiences  <FontAwesomeIcon icon={faCode} size="2xs" /></h1>
                 </div>
+                <div className='about-title-section'>
+                    <h1><span className='gradient-color'>Pro</span>jects</h1>
+                </div>
+            </div>
+
+            <div className='section-header-mob'>
+                <div className='about-section-background'>
+                    <h1>Works</h1>
+                </div>
+                <div className='about-title-section'>
+                    <h1><span className='gradient-color'>Pro</span>jects</h1>
+                </div>
+            </div>
+            <div className='project-section'>
                 <Mainprojects />
                 <Miniprojects />
 
 
 
-              
+
 
 
             </div>

@@ -22,7 +22,7 @@ function Showfeatures(props) {
 const SkillAssure = () => {
     const m = mainp[0];
     return (
-        <div className="project-page-overlay project-page-overlay-skill">
+        <div className="project-page-overlay" style={{ backgroundImage: `url(${m.primg})` }}>
             <Link to='/projects' className="iconBoxpa">
                 <Icon icon="line-md:close-circle" />
             </Link>
@@ -48,14 +48,14 @@ const SkillAssure = () => {
                     <div>
                         <p className="animation-titles-up text-break text-indent">{m.prlargedesc}</p>
                     </div>
-                    <div>
+                    <div style={{ backgroundImage: `url(${m.prbgimg})` }}>
                     </div>
 
                 </div>
                 <div className="project-view-features">
                     <h3>Features</h3>
                     <ul>
-                        {projectFeaturesSkillassure.map((f) => <Showfeatures feature={f.feature} anim={f.lottiename} />)}
+                        {projectFeaturesSkillassure.map((f) => <Showfeatures feature={f.feature} />)}
                     </ul>
                     <ul className="animation-ul">
                         <li><DisplayLottie lottiename={coding} /></li>
