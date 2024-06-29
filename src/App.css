@@ -15,6 +15,14 @@
 	--easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
 }
 
+html {
+  --cursor-color: #333
+}
+
+html.dark-mode {
+  --cursor-color: #fff
+}
+
 
 .courier-prime-regular {
   font-family: "Courier Prime", monospace;
@@ -3381,7 +3389,7 @@ a{
   .scene .left-zone .list li.item input[type=radio] ~ .content.content_bishop .picto {
     height: 300px;
     width: 500px;   
-    background-image: url("./components/items/images/certificates/bishop.jpg");
+    background-image: url("./components/items/images/certificates/great.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

@@ -1,27 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
-import { mainp, mainProjects } from "../../constants";
-
+import { mainp } from "../../constants";
 import { Icon } from '@iconify-icon/react';
-
-import SkillAssure from "./mainp/Skillassure";
 import './pro.css'
 
-function ShowProjects(props) {
-    return (
-        <div className='main-proj mp1' key={props.id}>
-            <div className='main-proj-title'>
-                <span className='project-sub-titles'>{props.title}</span>
-            </div>
-            <div className='main-proj-desc'>
-                <p className='project-sub-desc'>
-                    {props.description}
-                </p>
-            </div>
-        </div>
-    )
-}
+
+
 function ProjectsView(props) {
     return (
         <div className="cardp">
@@ -58,7 +42,7 @@ const Mainprojects = () => {
                 {mainp.map((x) => <ProjectsView title={x.prname} imgurl={x.primg} imgsdesc={x.prsmalldesc} imglink={x.prlink} imgbg={x.iconBoxp} stack1={x.stack1} stack2={x.stack2} stack3={x.stack3} bgclr1={x.stack1bg} bgclr2={x.stack2bg} bgclr3={x.stack3bg} stclass1={x.stack1clr} stclass2={x.stack2clr} stclass3={x.stack3clr} />)}
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Mainprojects;

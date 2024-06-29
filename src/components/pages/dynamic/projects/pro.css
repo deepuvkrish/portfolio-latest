@@ -21,6 +21,9 @@
     width: 100%;
     margin-inline: auto;
   }
+  section:nth-child(2){
+    margin-top: 100px;
+  }
   section h2 {
     text-transform: capitalize;
     letter-spacing: 0.025em;
@@ -324,6 +327,9 @@
     width: 90%;
     margin-inline: auto;
   }
+  section:nth-child(2){
+    margin-top: 100px;
+  }
   section h2 {
     text-transform: capitalize;
     letter-spacing: 0.025em;
@@ -344,8 +350,11 @@
   .cardp{
       width:355px;
   }
+  .cardmp{
+    width:275px;
+}
   
-  section .containerp .cardp ul {
+  section .containerp .cardp ul ,  section .containerp .cardmp ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -354,23 +363,26 @@
     flex-wrap: wrap;
     gap: 0.625rem;
   }
-  section .containerp .cardp ul li {
+  section .containerp .cardp ul li ,section .containerp .cardmp ul li {
     text-transform: uppercase;
-    color: #282828;
     font-weight: 700;
     font-size: 0.8rem;
     padding: 0.375rem 0.625rem;
     border-radius: 0.188rem;
   }
  
-  section .containerp .cardp .content {
+  section .containerp .cardp .content , section .containerp .cardmp .content {
     padding: 0.938rem 0.625rem;
   }
   section .containerp .cardp .content h3 {
     text-transform: capitalize;
     font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
   }
-  section .containerp .cardp .content p {
+  section .containerp .cardmp .content {
+    text-transform: capitalize;
+    font-size: clamp(1rem, 1.009rem + 0.064vw, 1rem);
+  }
+  section .containerp .cardp .content p ,  section .containerp .cardmp .content p{
     margin: 0.625rem 0 1.25rem;
     color: #565656;
   }
@@ -383,23 +395,32 @@
     border-bottom-right-radius: 0;
     overflow: hidden;
   }
-  section .containerp .cardp-inner .boxp {
+  section .containerp .cardmp-inner {
+    position: relative;
+    width: inherit;
+    height: 10rem;
+    background: var(color);
+    border-radius: 1.25rem;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+  }
+  section .containerp .cardp-inner .boxp ,  section .containerp .cardmp-inner .boxp  {
     width: 100%;
     height: 100%;
     background: #fff;
     border-radius: 1.25rem;
     overflow: hidden;
   }
-  section .containerp .cardp-inner .boxp .imgBoxp {
+  section .containerp .cardp-inner .boxp .imgBoxp ,  section .containerp .cardmp-inner .boxp .imgBoxp {
     position: absolute;
     inset: 0;
   }
-  section .containerp .cardp-inner .boxp .imgBoxp img {
+  section .containerp .cardp-inner .boxp .imgBoxp img , section .containerp .cardmp-inner .boxp .imgBoxp img{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  section .containerp .cardp-inner .boxp .iconp {
+  section .containerp .cardp-inner .boxp .iconp , section .containerp .cardmp-inner .boxp .iconp  {
     position: absolute;
     bottom: -0.375rem;
     right: -0.375rem;
@@ -408,10 +429,10 @@
     background: #000000;
     border-top-left-radius: 50%;
   }
-  section .containerp .cardp-inner .boxp .iconp:hover .iconBoxp {
+  section .containerp .cardp-inner .boxp .iconp:hover .iconBoxp , section .containerp .cardmp-inner .boxp .iconp:hover .iconBoxp {
     transform: scale(1.1);
   }
-  section .containerp .cardp-inner .boxp .iconp::before {
+  section .containerp .cardp-inner .boxp .iconp::before ,  section .containerp .cardmp-inner .boxp .iconp::before {
     position: absolute;
     content: "";
     bottom: 0.375rem;
@@ -422,7 +443,7 @@
     border-bottom-right-radius: 1.25rem;
     box-shadow: 0.313rem 0.313rem 0 0.313rem #000000;
   }
-  section .containerp .cardp-inner .boxp .iconp::after {
+  section .containerp .cardp-inner .boxp .iconp::after , section .containerp .cardmp-inner .boxp .iconp::after {
     position: absolute;
     content: "";
     top: -1.25rem;
@@ -433,7 +454,7 @@
     border-bottom-right-radius: 1.25rem;
     box-shadow: 0.313rem 0.313rem 0 0.313rem #000000;
   }
-  section .containerp .cardp-inner .boxp .iconp .iconBoxp {
+  section .containerp .cardp-inner .boxp .iconp .iconBoxp ,  section .containerp .cardmp-inner .boxp .iconp .iconBoxp {
     position: absolute;
     inset: 0.625rem;
     background: #282828;
@@ -443,7 +464,7 @@
     align-items: center;
     transition: 0.3s;
   }
-  section .containerp .cardp-inner .boxp .iconp .iconBoxp span {
+  section .containerp .cardp-inner .boxp .iconp .iconBoxp span ,  section .containerp .cardmp-inner .boxp .iconp .iconBoxp span{
     color: #000000;
     font-size: 1.5rem;
   }
@@ -620,26 +641,33 @@
 
 
 
-section .containerp .cardp ul .branding {
+section .containerp .cardp ul .branding , section .containerp .cardmp ul .branding {
   color: #704a31;
 }
 section .containerp .cardp ul .mongo {
     color: #210909;
   }
-section .containerp .cardp ul .reactjs {
+section .containerp .cardp ul .reactjs ,section .containerp .cardmp ul .reactjs {
     color: #034d61;
   }
-section .containerp .cardp ul .packaging {
+section .containerp .cardp ul .packaging ,section .containerp .cardmp ul .packaging {
   color: #1e3938;
 }
-section .containerp .cardp ul .css3 {
+section .containerp .cardp ul .css3 , section .containerp .cardmp ul .css3  {
     color: #003165;
 
 }
-section .containerp .cardp ul .javascript {
+section .containerp .cardmp ul .kaggle {
+  color: #013874;
+
+}
+section .containerp .cardp ul .javascript , section .containerp .cardmp ul .javascript {
     color: #7d8800;
 }
 
-section .containerp .cardp ul .php {
+section .containerp .cardp ul .php ,section .containerp .cardmp ul .php {
     color: #4a0267;
+}
+section .containerp .cardp ul .python, section .containerp .cardmp ul .python {
+  color: #ffd600;
 }

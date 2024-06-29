@@ -1,17 +1,17 @@
-import React from "react";
-import { mainp } from "../../../constants";
-import DisplayLottie from "../../../static/DisplayLottie";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify-icon/react';
 import '../pro.css'
-import { projectFeaturesPadippi } from "../../../constants";
-import { docs, meet, dwn } from '../../../assets'
+import { minip } from '../../../constants';
+import DisplayLottie from "../../../static/DisplayLottie";
+import { projectFeaturesCampus } from "../../../constants";
+import { student, teacher, records, study } from '../../../assets'
 
 function Showfeatures(props) {
     return (
         <li>
             <span>
-                {props.feature} {props.anim}
+                {props.feature}
             </span>
 
         </li>
@@ -19,8 +19,9 @@ function Showfeatures(props) {
 };
 
 
-const Padippi = () => {
-    const m = mainp[2];
+
+const Campus = () => {
+    const m = minip[1];
     return (
         <div className="project-page-overlay" style={{ backgroundImage: `url(${m.primg})` }}>
             <Link to='/projects' className="iconBoxpa">
@@ -36,10 +37,9 @@ const Padippi = () => {
                     </div>
                     <div>
                         <Icon icon="devicon-plain:php" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="fa6-brands:js" width="2em" height="2em" className="project-view-icn" />
                         <Icon icon="arcticons:learn-html" width="2em" height="2em" className="project-view-icn" />
                         <Icon icon="arcticons:learn-css" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="simple-icons:mysql" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="cib:js" width="2em" height="2em" className="project-view-icn" />
                     </div>
                 </div>
 
@@ -55,20 +55,20 @@ const Padippi = () => {
                 <div className="project-view-features">
                     <h3>Features</h3>
                     <ul>
-                        {projectFeaturesPadippi.map((f) => <Showfeatures feature={f.feature} />)}
+                        {projectFeaturesCampus.map((f) => <Showfeatures feature={f.feature} />)}
                     </ul>
                     <ul className="animation-ul">
-                        <li><DisplayLottie lottiename={dwn} /></li>
-                        <li><DisplayLottie lottiename={docs} /></li>
-                        <li><DisplayLottie lottiename={meet} /></li>
+                        <li><DisplayLottie lottiename={student} /></li>
+                        <li><DisplayLottie lottiename={teacher} /></li>
+                        <li><DisplayLottie lottiename={records} /></li>
+                        <li><DisplayLottie lottiename={study} /></li>
+
                     </ul>
                 </div>
 
             </div>
         </div>
-    )
+    );
 };
 
-
-export default Padippi;
-
+export default Campus;

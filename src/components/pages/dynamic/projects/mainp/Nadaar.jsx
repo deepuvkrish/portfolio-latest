@@ -37,11 +37,10 @@ const Nadaar = () => {
                         <h5 className="animation-titles-up">{m.prsmalldesc}</h5>
                     </div>
                     <div>
-                        <Icon icon="simple-icons:edx" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="bxl:react" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="devicon-plain:django-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="fa6-brands:js" width="2em" height="2em" className="project-view-icn" />
                         <Icon icon="arcticons:learn-html" width="2em" height="2em" className="project-view-icn" />
                         <Icon icon="arcticons:learn-css" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="simple-icons:mysql" width="2em" height="2em" className="project-view-icn" />
                     </div>
                 </div>
 

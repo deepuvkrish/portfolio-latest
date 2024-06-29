@@ -12,7 +12,7 @@ function Showfeatures(props) {
     return (
         <li>
             <span>
-                {props.feature} {props.anim}
+                {props.feature}
             </span>
 
         </li>

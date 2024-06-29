@@ -1,17 +1,17 @@
-import React from "react";
-import { mainp } from "../../../constants";
-import DisplayLottie from "../../../static/DisplayLottie";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify-icon/react';
 import '../pro.css'
-import { projectFeaturesPadippi } from "../../../constants";
-import { docs, meet, dwn } from '../../../assets'
+import { minip } from '../../../constants';
+import DisplayLottie from "../../../static/DisplayLottie";
+import { projectFeaturesBrain } from "../../../constants";
+import { detect, classification, segment } from '../../../assets'
 
 function Showfeatures(props) {
     return (
         <li>
             <span>
-                {props.feature} {props.anim}
+                {props.feature}
             </span>
 
         </li>
@@ -19,8 +19,9 @@ function Showfeatures(props) {
 };
 
 
-const Padippi = () => {
-    const m = mainp[2];
+
+const Brain = () => {
+    const m = minip[0];
     return (
         <div className="project-page-overlay" style={{ backgroundImage: `url(${m.primg})` }}>
             <Link to='/projects' className="iconBoxpa">
@@ -35,11 +36,14 @@ const Padippi = () => {
                         <h5 className="animation-titles-up">{m.prsmalldesc}</h5>
                     </div>
                     <div>
-                        <Icon icon="devicon-plain:php" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="fa6-brands:js" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="arcticons:learn-html" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="arcticons:learn-css" width="2em" height="2em" className="project-view-icn" />
-                        <Icon icon="simple-icons:mysql" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="devicon-plain:python-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="devicon:tensorflow-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="devicon-plain:numpy-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="devicon-plain:pandas-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="devicon-plain:matplotlib-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="devicon-plain:keras-wordmark" width="2em" height="2em" className="project-view-icn" />
+                        <Icon icon="simple-icons:kaggle" width="2em" height="2em" className="project-view-icn" />
+
                     </div>
                 </div>
 
@@ -55,20 +59,18 @@ const Padippi = () => {
                 <div className="project-view-features">
                     <h3>Features</h3>
                     <ul>
-                        {projectFeaturesPadippi.map((f) => <Showfeatures feature={f.feature} />)}
+                        {projectFeaturesBrain.map((f) => <Showfeatures feature={f.feature} />)}
                     </ul>
                     <ul className="animation-ul">
-                        <li><DisplayLottie lottiename={dwn} /></li>
-                        <li><DisplayLottie lottiename={docs} /></li>
-                        <li><DisplayLottie lottiename={meet} /></li>
+                        <li><DisplayLottie lottiename={detect} /></li>
+                        <li><DisplayLottie lottiename={segment} /></li>
+                        <li><DisplayLottie lottiename={classification} /></li>
                     </ul>
                 </div>
 
             </div>
         </div>
-    )
+    );
 };
 
-
-export default Padippi;
-
+export default Brain;
