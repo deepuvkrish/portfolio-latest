@@ -125,9 +125,9 @@ function App() {
           innerSize={8}
           outerSize={8}
           color='185, 227, 19'
-          outerAlpha={5}
-          innerScale={5}
-          outerScale={5}
+          outerAlpha={3}
+          innerScale={3}
+          outerScale={3}
           clickables={[
             'a',
             'input[type="text"]',
