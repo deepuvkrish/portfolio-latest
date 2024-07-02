@@ -15,13 +15,7 @@
 	--easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
 }
 
-html {
-  --cursor-color: #333
-}
 
-html.dark-mode {
-  --cursor-color: #fff
-}
 
 
 .courier-prime-regular {
@@ -60,6 +54,8 @@ a{
 }
 
 
+
+
 /* <==================== MOBILE RESPONSIVENESS ============================>*/
 @media only screen and (max-width:786px){
  
@@ -88,7 +84,9 @@ a{
     animation: bgoned 10s infinite;
     overflow-x: hidden; 
     align-items: center;
+    margin-top: 70px;
   }
+
   @keyframes bgoned {
     0% {background-size:100%;background-position:bottom 0 right 0;}
     50% {background-size:150%;background-position:bottom 50% right 40%;}
@@ -375,6 +373,7 @@ a{
     align-items: center;
     width:100vw;
     height: 100%;
+    margin-top: 30px;
     
   }
   .section-header{
