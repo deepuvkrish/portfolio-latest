@@ -182,21 +182,22 @@
    /* PROJECT PAGE */
   
    .project-page-overlay{
-    width: 80%;
+    width: 90%;
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     border-radius: 15px;
     align-self: center;
     margin-block-start: 4rem;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 998;
     animation: 2s fadeInScrollVerticle2 ease-in-out;
+    border: 1px solid rgb(0, 69, 122);
   }
   .project-view{
     border: 1px solid rgba(227, 227, 227, 0.19);

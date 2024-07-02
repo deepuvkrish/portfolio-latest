@@ -35,12 +35,12 @@ const Navbar = () => {
             setSpanTwo("spannav2");
             setSpanThree("spannav3");
         }
-        else {
-            setStyle("navlinks-active");
-            setSpanFirst("spannav1-active");
-            setSpanTwo("spannav2-active");
-            setSpanThree("spannav3-active");
-        }
+        // else {
+        //     setStyle("navlinks-active");
+        //     setSpanFirst("spannav1-active");
+        //     setSpanTwo("spannav2-active");
+        //     setSpanThree("spannav3-active");
+        // }
     }
 
     return (
