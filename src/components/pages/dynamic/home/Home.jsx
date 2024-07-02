@@ -22,7 +22,7 @@ const Home = () => {
     })
 
     return (
-        <div className='home-section'>
+        <div className='home-section scrollup'>
             <div className='home-background'>
                 <div className='box'>
                     <div className='wave -one'></div>

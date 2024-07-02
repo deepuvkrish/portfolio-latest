@@ -1946,6 +1946,33 @@ a{
 
   /* <========================== ABOUT SECTION ====================> */
 
+  .about-me{
+    animation: 1s scrolldown ease-in-out;
+  }
+  .scrollup{
+    animation: 2s scrollup  ease-in-out;
+    
+  }
+  @keyframes scrollup{
+    0%{
+      transform: translateY(400px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes scrolldown{
+    0%{
+      transform: translateY(-400px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
   .about-section{
     display: flex;
     flex-direction: column;
@@ -4205,7 +4232,3 @@ a{
   width: 40px;
   margin: 0 12.5px ;
 }
-
-
-
-

@@ -4,7 +4,7 @@ import { Icon } from '@iconify-icon/react';
 
 import { } from '@fortawesome/free-solid-svg-icons';
 import Graphics from './Graphics';
-import Sphereskill from './Sphereskill';
+
 import DisplayLottie from '../../static/DisplayLottie';
 import { contacts } from '../../assets';
 
@@ -32,7 +32,7 @@ const Contact = () => {
 
 
     return (
-        <div className='contact-section'>
+        <div className='contact-section scrollup'>
             <div className='contact-intro'>
                 <div className='image-sensor'></div>
 
@@ -137,7 +137,6 @@ const Contact = () => {
                     </div>
 
                 </div>
-                <Sphereskill />
             </div>
 
 

@@ -12,7 +12,7 @@ function ProjectsView(props) {
             <div className="cardp-inner" style={{ backgroundColor: "#fff" }}>
                 <div className="boxp">
                     <div className="imgBoxp">
-                        <img src={props.imgurl} alt={props.title} />
+                        <img src={props.imgurl} alt={props.title} className="hoverImageCard"/>
                     </div>
                     <div className="iconp">
                         <Link to={props.imglink} className="iconBoxp" style={{ backgroundColor: `${props.imgbg}` }}><span className="material-symbols-outlined">

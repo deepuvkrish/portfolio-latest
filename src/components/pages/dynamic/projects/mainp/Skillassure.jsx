@@ -17,7 +17,7 @@ function Showfeatures(props) {
 
         </li>
     );
-};
+};  
 
 const SkillAssure = () => {
     const m = mainp[0];

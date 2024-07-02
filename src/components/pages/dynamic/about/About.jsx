@@ -3,7 +3,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faReact, faAngular, faNodeJs, faFigma, faHtml5, faCss3Alt, faPython, faJs } from '@fortawesome/free-brands-svg-icons';
-import { faSquarePhone, faUser, faCakeCandles, faFlag, faHouseChimney, faVolumeHigh, faTerminal, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faSquarePhone, faUser, faCakeCandles, faFlag, faHouseChimney, faVolumeHigh, faTerminal } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import cv from '../../../items/docs/cv.pdf'
 import india from '../../../items/images/ui/india.png'
@@ -25,7 +25,7 @@ import { Figma, Js, LinkedinOption, Node, WhatsApp } from 'grommet-icons';
 
 const About = () => {
     return (
-        <div className='about-section'>
+        <div className='about-section scrollup'>
             <div className='section-header'>
                 <div className='about-section-background'>
                     <h1>Resume</h1>
@@ -126,7 +126,7 @@ const About = () => {
                         <a href={cv} download="Resume" >
                             Download CV
                         </a>
-                        <Icon icon="line-md:cloud-download-outline-loop" width="1.3rem" height="1.3rem" className='download-icon'/>
+                        <Icon icon="line-md:cloud-download-outline-loop" width="1.3rem" height="1.3rem" className='download-icon' />
                     </div>
                 </div>
 
@@ -484,7 +484,6 @@ const About = () => {
 
                 </ul>
             </div>
-
 
 
         </div >

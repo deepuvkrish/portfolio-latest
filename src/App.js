@@ -1,8 +1,5 @@
 import './App.css';
 import React from "react";
-import AnimatedCursor from "react-animated-cursor"
-// import { MouseTrail } from "@stichiboi/react-elegant-mouse-trail";
-
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
@@ -63,33 +60,33 @@ function App() {
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 40,
           },
           repulse: {
-            distance: 200,
+            distance: 150,
             duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#ffffff5c",
         },
         links: {
-          color: "#ffffff",
+          color: "#ffffff5c",
           distance: 150,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.1,
           width: 1,
         },
         move: {
           direction: "none",
           enable: true,
           outModes: {
-            default: "bounce",
+            default: "destroy",
           },
-          random: false,
-          speed: 6,
+          random: true,
+          speed: 3,
           straight: false,
         },
         number: {
@@ -99,7 +96,7 @@ function App() {
           value: 80,
         },
         opacity: {
-          value: 0.5,
+          value: 0.1,
         },
         shape: {
           type: "circle",
@@ -121,27 +118,7 @@ function App() {
           options={options}
         />
         {/* <MouseTrail strokeColor={"#b9e313"} lineDuration={5} lineWidthStart={5} number={1} /> */}
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={8}
-          color='185, 227, 19'
-          outerAlpha={3}
-          innerScale={3}
-          outerScale={3}
-          clickables={[
-            'a',
-            'input[type="text"]',
-            'input[type="email"]',
-            'input[type="number"]',
-            'input[type="submit"]',
-            'input[type="image"]',
-            'label[for]',
-            'select',
-            'textarea',
-            'button',
-            '.link'
-          ]}
-        />
+
         <HelmetProvider>
           <Helmet>
             <html lang="en" />
@@ -166,7 +143,6 @@ function App() {
               <Route path='/lib' element={<Lib />} />
               <Route path='/petzi' element={<Petzi />} />
               <Route path='/campus' element={<Campus />} />
-
             </Route>
           </Routes>
         </BrowserRouter>

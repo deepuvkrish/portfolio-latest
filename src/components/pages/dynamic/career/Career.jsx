@@ -10,7 +10,7 @@ import Achievements from './Achievements';
 
 const Career = () => {
     return (
-        <div className='about-section'>
+        <div className='about-section scrollup'>
             <Certifications />
             <Achievements />
 

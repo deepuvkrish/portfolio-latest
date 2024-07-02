@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-import About from "../dynamic/about/About";
-
 
 const Floatbutton = (props) => {
     return (

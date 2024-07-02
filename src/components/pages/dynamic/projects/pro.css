@@ -362,10 +362,7 @@
   }
   .cardmp{
     width:275px;
-    background: rgb(1 60 81 / 46%);
-    backdrop-filter: blur(95px);
-    padding: 10px;
-    border-radius: 30px;
+   
 }
   
   section .containerp .cardp ul ,  section .containerp .cardmp ul {
@@ -404,18 +401,14 @@
     position: relative;
     width: inherit;
     height: 15rem;
-    background: var(color);
     border-radius: 1.25rem;
-    border-bottom-right-radius: 0;
     overflow: hidden;
   }
   section .containerp .cardmp-inner {
     position: relative;
     width: inherit;
     height: 10rem;
-    background: var(color);
     border-radius: 1.25rem;
-    border-bottom-right-radius: 0;
     overflow: hidden;
   }
   section .containerp .cardp-inner .boxp ,  section .containerp .cardmp-inner .boxp  {
@@ -433,7 +426,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
   }
+  .hoverImageCard:hover{
+    animation: 2s pulse ease-in-out;
+  }
+
+  @keyframes pulse{
+    from ,to{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.3);
+    }
+  }
+
+
   section .containerp .cardp-inner .boxp .iconp , section .containerp .cardmp-inner .boxp .iconp  {
     position: absolute;
     bottom: -0.375rem;
@@ -442,6 +451,7 @@
     height: 6rem;
     background: #000000;
     border-top-left-radius: 50%;
+    border-bottom-right-radius: 35%;
   }
   section .containerp .cardp-inner .boxp .iconp:hover .iconBoxp , section .containerp .cardmp-inner .boxp .iconp:hover .iconBoxp {
     transform: scale(1.1);
@@ -503,7 +513,11 @@
   
   
   /* PROJECT PAGE */
-  
+
+  .project-section{
+    width: 100%;
+    padding-block: 5rem;
+  }
   .project-page-overlay{
     width: 70vw;
     height: 70vh;

@@ -1,6 +1,6 @@
 import React from "react";
 // import { Icon } from '@iconify-icon/react';
-import { achievements } from "../../constants";
+// import { achievements } from "../../constants";
 
 
 const Achievements = () => {
@@ -18,7 +18,7 @@ const Achievements = () => {
                         <h1>Achieve<span className='gradient-color'>ments</span></h1>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     )
