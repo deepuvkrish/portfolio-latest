@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## To Run in Local-
 
 Clone this repository [git clone command](https://github.com/deepuvkrish/portfolio-latest.git).
+
 CD into the cloned directory
 
 ### `npm install` Install necessary dependencies using npm commands

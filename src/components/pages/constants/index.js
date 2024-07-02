@@ -55,7 +55,7 @@ export const certificationsmob = [
         idicon: greatlearning,
         title: "Machine Learning with Python | GreatLearning",
         from: "Machine Learning",
-        url: " ",
+        url: "https://verify.mygreatlearning.com/verify/ZZRVJMJD",
         classid: "label_bishop",
         classnm: "content content_bishop",
     },

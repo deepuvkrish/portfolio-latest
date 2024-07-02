@@ -4,7 +4,7 @@ import { certifications, certificationsmob } from '../../constants';
 
 function CertificateGenerator(props) {
     return (
-        <li>
+        <li key={props.imgid}>
             <div className="card">
                 <a href={props.imgurl}>
                     <span className="model-name">{props.imgfrom}</span>
@@ -17,9 +17,9 @@ function CertificateGenerator(props) {
 
 function Sample(props) {
     return (
-        <li className='item'>
+        <li className='item' key={props.imgid}>
             <input type="radio" id={props.imgfrom} name='basic_carousel' value={props.imgfrom} checked />
-            <label className={props.imageid} for={props.imgfrom}>{props.imgfrom}</label>
+            <label className={props.imageid} htmlFor={props.imgfrom}>{props.imgfrom}</label>
             <div className={props.imagecls}>
                 <span className='picto'></span>
                 <h2>{props.imgtitle} </h2>
