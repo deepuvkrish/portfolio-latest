@@ -27,7 +27,7 @@ function App() {
         <Helmet>
           <html lang="en" />
           <title>Deepak KV</title>
-          <meta name="description" content="Tutorial for React Helmet" />
+          <meta name="description" content="Deepak Portfolio" />
           <meta name="theme-color" content="#E6E6FA" />
         </Helmet>
       </HelmetProvider>
