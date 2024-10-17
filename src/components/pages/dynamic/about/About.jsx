@@ -153,7 +153,7 @@ const About = () => {
             <div className='about-infos about-skill-section lap-skills-section'>
                 <div className='about-skill'>
                     <div className='about-skill-tab1'>
-                        <div className='content-skills'>
+                        {/* <div className='content-skills'>
                             <div className='front-end-div'>
                                 <div className='front-end-div-header'>
                                     <span>Front End</span>
@@ -274,6 +274,170 @@ const About = () => {
                                     <span className='tech-title'>Adobe PS</span>
                                 </div>
                             </div>
+                        </div> */}
+                        <div className="skillstack">
+                            <div className="skillStackTitle">
+                                <span>Web Development</span>
+                            </div>
+                            <div className="skillBubbles">
+                                <div className="skill">
+                                    <Icon icon="lineicons:nextjs" width="22" height="22" />
+                                    <h5>Next.js</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:react" width="22" height="22" />
+                                    <h5>React.js</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-angular" width="22" height="22" />
+                                    <h5>Angular.js</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:nodejs-icon" width="22" height="22" />
+                                    <h5>Node.Js</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="skill-icons:expressjs-dark" width="22" height="22" />
+                                    <h5>Express.Js</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="simple-icons:edx" width="22" height="22" />
+                                    <h5>openEDX</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-django" width="22" height="22" />
+                                    <h5>Django</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="devicon:typescript" width="22" height="22" />
+                                    <h5>TypeScript</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:javascript" width="22" height="22" />
+                                    <h5>JavaScript</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="devicon:html5" width="22" height="22" />
+                                    <h5>Html5</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-css" width="22" height="22" />
+                                    <h5>CSS3</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:tailwindcss-icon" width="22" height="22" />
+                                    <h5>Tailwind</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:mysql" width="22" height="22" />
+                                    <h5>MySQl</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="logos:mongodb-icon" width="22" height="22" />
+                                    <h5>Mongo DB</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="devicon:postgresql-wordmark" width="22" height="22" />
+                                    <h5>PostGre SQL</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-php" width="22" height="22" />
+                                    <h5>Php</h5>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="skillstack">
+                            <div className="skillStackTitle">
+                                <span>Programming Languages</span>
+                            </div>
+                            <div className="skillBubbles">
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-cpp2" width="22" height="22" />
+                                    <h5>C++</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="mdi:language-c" width="22" height="22" style={{ color: '#ae00ff' }} />
+                                    <h5>C</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="devicon:java" width="22" height="22" />
+                                    <h5>Java</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="devicon:python" width="22" height="22" />
+                                    <h5>Python</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-rust" width="22" height="22" />
+                                    <h5>Rust</h5>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="skillstack">
+                            <div className="skillStackTitle">
+                                <span>Applications</span>
+                            </div>
+                            <div className="skillBubbles">
+                                <div className="skill">
+                                    <Icon icon="akar-icons:github-fill" width="22" height="22" />
+                                    <h5>GitHub</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="devicon:gitlab" width="22" height="22" />
+                                    <h5>GitLabs</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:postman-icon" width="22" height="22" />
+                                    <h5>Postman</h5>
+                                </div>
+
+                                <div className="skill">
+                                    <Icon icon="logos:figma" width="22" height="22" />
+                                    <h5>Figma</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="devicon:vscode" width="22" height="22" />
+                                    <h5>VS Code</h5>
+                                </div>
+
+
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-word" width="22" height="22" />
+                                    <h5>MS Word</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="vscode-icons:file-type-excel2" width="22" height="22" />
+                                    <h5>MS Excel</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="logos:xampp" width="22" height="22" />
+                                    <h5>Xampp</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="devicon:anaconda" width="22" height="22" />
+                                    <h5>Anaconda</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="simple-icons:wondershare" width="22" height="22" />
+                                    <h5>Filmora</h5>
+                                </div>
+                                <div className="skill">
+                                    <Icon icon="skill-icons:photoshop" width="22" height="22" />
+                                    <h5>Photoshop</h5>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>

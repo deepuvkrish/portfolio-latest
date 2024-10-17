@@ -888,34 +888,34 @@ a{
     align-items: center;
     transition: 1s;
   }
-  .content-skills ,.content-skill2{
+  /* .content-skills ,.content-skill2{
     display: flex;
     flex-direction: column;
     width: 100vw;
     justify-content: center;
     align-items: center;
 
-  }
-  .front-end-div, .back-end-div, .core-end-div{
+  } */
+  /* .front-end-div, .back-end-div, .core-end-div{
     display: flex;
     flex-direction: column;
     width: 100vw;
     justify-content: space-between;
     align-items: center;
     margin-block:10px
-  }
-  .front-end-div-header , .back-end-div-header, .core-div-header, .app-div-header{
+  } */
+  /* .front-end-div-header , .back-end-div-header, .core-div-header, .app-div-header{
     margin-bottom: 10px;
     background: -webkit-linear-gradient(135deg,rgb(0, 115, 255),cyan);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .front-end-tech{
+  } */
+  /* .front-end-tech{
     width: 75%;
     display: flex;
     justify-content: space-evenly;
-  }
-  .front-end-tech div, .back-end-tech div, .core-end-tech div, .app-tech div{
+  } */
+  /* .front-end-tech div, .back-end-tech div, .core-end-tech div, .app-tech div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -924,20 +924,20 @@ a{
   }
   .app-tech div{
     margin-bottom: 20px;
-  }
-  .tech-title{
+  } */
+  /* .tech-title{
     font-size: 9px;
     text-transform: uppercase;
     background: linear-gradient(0deg, grey, white, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .back-end-tech, .core-end-tech{
+  } */
+  /* .back-end-tech, .core-end-tech{
     width: 60%;
     display: flex;
     justify-content: space-evenly;
-  }
-  .app-tech{
+  } */
+  /* .app-tech{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
@@ -964,8 +964,8 @@ a{
   .vscode:hover{
     filter: hue-rotate(289deg) saturate(7.5);;
     transform: scale(1.1);
-  }
-  .photoshop:hover{
+  } */
+  /* .photoshop:hover{
     filter: hue-rotate(260deg) saturate(7.5);;
     transform: scale(1.1);
   }
@@ -989,8 +989,8 @@ a{
   .sqls:hover{
     filter: hue-rotate(266deg) saturate(7.5);;
     transform: scale(1.1);
-  }
-  .mongos:hover{
+  } */
+  /* .mongos:hover{
     filter: hue-rotate(87deg) saturate(7.5);
     transform: scale(1.1);
   }
@@ -1005,8 +1005,8 @@ a{
     animation-timeline: view();
     animation-range-start: cover;
     animation-range-end: 90vh;
-  }
-  @keyframes fadeing-right{
+  } */
+  /* @keyframes fadeing-right{
     0% {
       transform: translateX(12em);
       opacity: 0;
@@ -1015,8 +1015,8 @@ a{
       transform: translateX(0em);
       opacity: 1;
     }
-  }
-  .headerbackscroll{
+  } */
+  /* .headerbackscroll{
     animation: fadeing-lefts linear;
     animation-timeline: view();
     animation-range-start:cover;
@@ -1031,8 +1031,8 @@ a{
       transform: translateX(0px);
       opacity: 1;
     }
-  }
-  .headerbackscrolllinksleft{
+  } */
+  /* .headerbackscrolllinksleft{
     animation: fadeing-left linear;
     animation-timeline: view();
     animation-range-start:cover;
@@ -1048,15 +1048,15 @@ a{
       transform: translateX(0px);
       opacity: 1;
     }
-  }
-  .headerbackscrolllinksright{
+  } */
+  /* .headerbackscrolllinksright{
     animation: fadeing-rights linear;
     animation-timeline: view();
     animation-range-start:cover;
     animation-range-end:50vh;
 
-  }
-  @keyframes fadeing-rights{
+  } */
+  /* @keyframes fadeing-rights{
     from{
       transform: translateX(125px);
       opacity: 0;
@@ -1072,8 +1072,8 @@ a{
     animation-range-start:cover;
     animation-range-end:50vh;
 
-  }
-  .headerbackscrolllinksdown1{
+  } */
+  /* .headerbackscrolllinksdown1{
     animation: fadeing-up linear;
     animation-timeline: view();
     animation-range-start:-100px;
@@ -1100,8 +1100,8 @@ a{
     animation-range-start:-600px;
     animation-range-end:50vh;
 
-  }
-  .headerbackscrolllinksdown5{
+  } */
+  /* .headerbackscrolllinksdown5{
     animation: fadeing-up linear;
     animation-timeline: view();
     animation-range-start:-400px;
@@ -1121,8 +1121,8 @@ a{
     animation-range-start:cover;
     animation-range-end:50vh;
 
-  }
-  @keyframes fadeing-up{
+  } */
+  /* @keyframes fadeing-up{
     from{
       transform: translateY(175px);
       opacity: 0;
@@ -1131,7 +1131,7 @@ a{
       transform: translateY(0px);
       opacity: 1;
     }
-  }
+  } */
 
 
 
@@ -3683,14 +3683,7 @@ a{
       justify-content: center;
       align-items: center;
     }
-    .skillIcons{
-      color: #9e9e9e;
-      transition: 700ms;
-    }
-    .skillIcons:hover{
-      color: #47e313;
-      transform: scale(1.1);
-    }
+
 
     .new{
       background-image: url(../src/components/items/images/ui/new.png);
@@ -3817,6 +3810,63 @@ a{
       color: grey;
     }
 
+
+
+
+    .skillstack{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding:20px 20px;
+      margin-bottom: 30px;
+    }
+
+    .skillStackTitle{
+      margin-bottom: 20px;
+    }
+
+    .skillStackTitle span{
+      font-weight: 700;
+      color: gray;
+      font-size: 22px;
+      padding-inline: 50px;
+      text-transform: uppercase;
+    }
+    .skillBubbles{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 35%;
+      justify-content: center;
+      align-items: center;
+    }
+    .skill{
+      display: flex;
+      border: 1px solid rgb(0 0 0);
+      border-radius: 40px;
+      padding:5px 10px;
+      background: rgba(128, 128, 128, 0.279);
+      align-items: center;
+      justify-content: space-around;
+      margin-inline: 5px;
+      margin-block: 5px;
+      cursor: pointer;
+      transition: 700ms;
+
+    }
+    .skill h5{
+      font-weight: 500;
+      margin-inline: 5px;
+      font-size: 12px;
+    }
+    .skill:hover{
+      box-shadow: inset .2rem .2rem .4rem rgb(255, 255, 255), inset -.2rem -.2rem .3rem rgb(45, 45, 45);
+      background: rgb(138, 138, 138);
+      color: rgb(66, 66, 66);
+      transform: scale(1.1);
+    }
 
 
 
