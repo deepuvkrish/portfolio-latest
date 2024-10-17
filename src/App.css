@@ -1420,6 +1420,201 @@ a{
     height: 30px;
   }
 
+  
+  .achievement-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .new{
+    background-image: url(../src/components/items/images/ui/new.png);
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    left: 25%;
+  }
+  .old{
+    background:none;
+    width: 2px;
+    height: 2px;
+  }
+
+
+  .achievement_boxes{
+    display: flex;
+    width: 80vw;
+    min-height: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .achieve_portion{
+    position: relative;
+    width: 435px;
+    height: 150px;
+    border-radius: 15px;
+    margin:10px 20px;
+  }
+  #ach1{
+    background-color: hsl(270, 50%, 11%);
+    background-image: linear-gradient(120deg, hsla(22, 97%, 47%, 0.5), 10%,hsl(0deg 0.58% 6.61%) 60%), url(../src/components/items/images/certificates/vidhya.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  #ach2{
+    background-color: hsl(270, 50%, 11%);
+    background-image: linear-gradient(120deg, hsl(167.58deg 97% 47% / 50%), 10%,hsl(0deg 0.58% 6.61%) 60%), url(../src/components/items/images/certificates/rkh.jpeg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  #ach3{
+    background-color: hsl(270, 50%, 11%);
+    background-image: linear-gradient(120deg, hsla(201, 97%, 47%, 0.5), 10%,hsl(0deg 0.58% 6.61%) 60%), url(../src/components/items/images/certificates/bishop.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  .certiicon{
+    position: absolute;
+    right: -14px;
+    top: -45px;
+  }
+
+
+  .achieve_details{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    justify-content: space-between;
+    box-shadow: 0 6px 16px 0 hsla(270, 30%, 3%, .4);
+  }
+  .achievementGal{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgBorder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+    padding: 4px;
+    border: 3px solid #949494;
+    border-radius: 15px;
+  }
+  .achieve_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 800ms;
+    position: relative;
+    z-index: 99;
+  }
+  .achieve_img:hover{
+    width: 500px;
+    height: 300px;
+    padding-left:50px;
+  }
+  .achieve_texts{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .achieve_texts h1{
+    font-size: 19px;
+    padding: 0;
+    margin: 0;
+  }
+  .achieve_texts h3{
+    font-size: 14px;
+  }
+  .achieve_texts h6{
+    color: grey;
+  }
+
+
+
+
+  .skillstack{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding:20px 20px;
+    margin-bottom: 30px;
+  }
+
+  .skillStackTitle{
+    margin-bottom: 20px;
+  }
+
+  .skillStackTitle span{
+    font-weight: 700;
+    color: gray;
+    font-size: 22px;
+    padding-inline: 50px;
+    text-transform: uppercase;
+  }
+  .skillBubbles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill{
+    display: flex;
+    border: 1px solid rgb(0 0 0);
+    border-radius: 40px;
+    padding:5px 10px;
+    background: rgba(128, 128, 128, 0.279);
+    align-items: center;
+    justify-content: space-around;
+    margin-inline: 5px;
+    margin-block: 5px;
+    cursor: pointer;
+    transition: 700ms;
+
+  }
+  .skill h5{
+    font-weight: 500;
+    margin-inline: 5px;
+    font-size: 12px;
+  }
+  .skill:hover{
+    box-shadow: inset .2rem .2rem .4rem rgb(255, 255, 255), inset -.2rem -.2rem .3rem rgb(45, 45, 45);
+    background: rgb(138, 138, 138);
+    color: rgb(66, 66, 66);
+    transform: scale(1.1);
+  }
+
+
+
 
 
 

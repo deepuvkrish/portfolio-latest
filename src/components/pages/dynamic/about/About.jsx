@@ -443,7 +443,7 @@ const About = () => {
                 </div>
             </div >
 
-            <div className='about-infos about-skill-section mobile-skills-section'>
+            {/* <div className='about-infos about-skill-section mobile-skills-section'>
                 <div className='about-skill'>
                     <div className='about-skill-tab1'>
                         <div className='content-skills'>
@@ -569,7 +569,7 @@ const About = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
 
 
