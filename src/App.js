@@ -11,6 +11,7 @@ import Career from './components/pages/dynamic/career/Career';
 import Projects from './components/pages/dynamic/projects/Projects';
 import Contact from './components/pages/dynamic/contact/Contact';
 import SkillAssure from './components/pages/dynamic/projects/mainp/Skillassure';
+import Rana from './components/pages/dynamic/projects/mainp/Rana';
 import Nadaar from './components/pages/dynamic/projects/mainp/Nadaar';
 import Padippi from './components/pages/dynamic/projects/mainp/Padippi';
 import Brain from './components/pages/dynamic/projects/minip/Brain';
@@ -43,6 +44,7 @@ function App() {
             <Route path='/skillassure' element={<SkillAssure />} />
             <Route path='/nadaar' element={<Nadaar />} />
             <Route path='/padippi' element={<Padippi />} />
+            <Route path='/rana' element={<Rana />} />
             <Route path='/brain' element={<Brain />} />
             <Route path='/lib' element={<Lib />} />
             <Route path='/petzi' element={<Petzi />} />

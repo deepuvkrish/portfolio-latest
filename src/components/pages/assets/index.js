@@ -1,6 +1,9 @@
 import guvi from '../../items/images/certificates/guvi.png'
 import coursera from '../../items/images/certificates/coursera.jpeg'
+import courseraexcel from '../../items/images/certificates/coursera.jpeg'
 import bishop from '../../items/images/certificates/bishop.jpg'
+import vidhya from '../../items/images/certificates/vidhya.jpg'
+import reboot from '../../items/images/certificates/rkh.jpeg'
 import great from '../../items/images/certificates/great.png'
 
 import guvilogo from '../../items/images/logos/guvi.png'
@@ -75,4 +78,7 @@ export {
     meet,
     dwn,
     detect,
+    courseraexcel,
+    vidhya,
+    reboot,
 };

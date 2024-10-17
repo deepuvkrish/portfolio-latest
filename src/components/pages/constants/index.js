@@ -1,6 +1,7 @@
 import {
     guvi,
     coursera,
+    courseraexcel,
     bishop,
     great,
     guvilogo,
@@ -17,7 +18,9 @@ export const certifications = [
         url: "https://www.guvi.in/certificate?id=181344fYAns939b670",
         classid: "label_guvi",
         classnm: "content content_guvi",
+        iconcls: "old",
         check: true,
+
     },
     {
         id: great,
@@ -27,6 +30,7 @@ export const certifications = [
         url: "https://verify.mygreatlearning.com/verify/ZZRVJMJD",
         classid: "label_bishop",
         classnm: "content content_bishop",
+        iconcls: "old",
 
     },
     {
@@ -37,6 +41,17 @@ export const certifications = [
         url: "https://coursera.org/verify/7G4L8CGCFHGL",
         classid: "label_coursera",
         classnm: "content content_coursera",
+        iconcls: "old",
+    },
+    {
+        id: courseraexcel,
+        idicon: courseraicon,
+        title: "Introduction to Microsoft Excel",
+        from: "Microsoft Excel",
+        url: "https://coursera.org/verify/R8BXBF5G6ED2",
+        classid: "label_coursera_excel",
+        classnm: "content content_coursera_excel",
+        iconcls: "new",
     }
 ];
 export const certificationsmob = [
@@ -176,6 +191,7 @@ export const miniProjects = [
 
 
 export const mainp = [
+
     {
         prid: 1,
         prname: "Skillassure",
@@ -194,7 +210,8 @@ export const mainp = [
         stack3: "Mongo DB",
         stack3bg: "rgb(136 239 69)",
         stack3clr: "mongo",
-
+        status: "Completed",
+        staCol: "#15ea0f",
     },
     {
         prid: 2,
@@ -214,8 +231,8 @@ export const mainp = [
         stack3: "Php",
         stack3bg: "rgb(164 68 255)",
         stack3clr: "php",
-
-
+        status: "Completed",
+        staCol: "#15ea0f",
     },
     {
         prid: 3,
@@ -235,9 +252,32 @@ export const mainp = [
         stack3: "Php",
         stack3bg: "rgb(164 68 255)",
         stack3clr: "php",
+        status: "Completed",
+        staCol: "#15ea0f",
 
+    },
+    {
+        prid: 4,
+        prname: "Rana Hospitals",
+        prsmalldesc: "Hospital site for Rana Hospitals, Trichy",
+        prlargedesc: "The main goal of this project was to develop a responsive website for Rana Hospitals, Trichi. Using this website, users can make appointments, view facilities, latest hospital features, treatment availabilities, and various departments and doctors currently working there.  Technologies Used for Dev: HTML5, CSS3, JS, PHP.",
+        iconBoxp: "rgb(163 221 228)",
+        primg: "https://cdn.hexahealth.com/Image/66793287-3e7c-4d0b-a24b-efba1783d30b.jpg",
+        prbgimg: "https://cdn.hexahealth.com/Image/ffef7fa1-44c0-4296-be11-cd0c295d9848.jpg",
+        prlink: "/rana",
+        stack1: "HTML5 CSS3",
+        stack1bg: "#d3b19a",
+        stack1clr: "branding",
+        stack2: "JS",
+        stack2bg: "#f2ff67",
+        stack2clr: "javascript",
+        stack3: "Php",
+        stack3bg: "rgb(164 68 255)",
+        stack3clr: "php",
+        status: "On-going",
+        staCol: "#ec8d09",
+    },
 
-    }
 ];
 
 export const minip = [
@@ -329,6 +369,32 @@ export const minip = [
 
 
 
+export const projectFeaturesRana = [
+    {
+        id: 1,
+        feature: "Online Appointments",
+    },
+    {
+        id: 2,
+        feature: "View Total Departments",
+
+    },
+    {
+        id: 3,
+        feature: "View Total Doctors",
+
+    },
+    {
+        id: 4,
+        feature: "View Treatments",
+
+    },
+    {
+        id: 5,
+        feature: "Patiant Feedback",
+
+    }
+];
 
 export const projectFeaturesSkillassure = [
     {

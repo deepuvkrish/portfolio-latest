@@ -1,7 +1,11 @@
 import React from 'react';
-import { certifications, certificationsmob } from '../../constants';
-// import { guvilogo, greatlearning } from '../../assets'
+import { Icon } from '@iconify-icon/react';
 
+import { certifications, certificationsmob } from '../../constants';
+
+
+
+//mobile certificate viewer
 function CertificateGenerator(props) {
     return (
         <li key={props.imgid}>
@@ -15,15 +19,18 @@ function CertificateGenerator(props) {
     )
 }
 
+
+//laptop certificate viewer
 function Sample(props) {
     return (
         <li className='item' key={props.imgid}>
             <input type="radio" id={props.imgfrom} name='basic_carousel' value={props.imgfrom} checked />
-            <label className={props.imageid} htmlFor={props.imgfrom}>{props.imgfrom}</label>
+            <div className={props.iconcls}></div>
+            <label className={props.imageid} htmlFor={props.imgfrom}>{props.imgfrom} </label>
             <div className={props.imagecls}>
                 <span className='picto'></span>
                 <h2>{props.imgtitle} </h2>
-                <a href={props.imgurl} target='__blank'> Verify {props.imgfrom} Certificate here</a>
+                <a href={props.imgurl} target='__blank'> <Icon icon="cil:hand-point-right" width="22" height="22" style={{ color: "white" }} /> Verify {props.imgfrom} Certificate here</a>
             </div>
         </li>
     )
@@ -52,7 +59,7 @@ const Certifications = () => {
             <div className="scene scene-lap">
                 <div className="left-zone">
                     <ul className="list">
-                        {certifications.map((certi) => <Sample imgid={certi.id} imglogo={certi.idicon} imgtitle={certi.title} imgfrom={certi.from} imgurl={certi.url} imageid={certi.classid} imagecls={certi.classnm} />)}
+                        {certifications.map((certi) => <Sample imgid={certi.id} imglogo={certi.idicon} imgtitle={certi.title} imgfrom={certi.from} imgurl={certi.url} imageid={certi.classid} imagecls={certi.classnm} iconcls={certi.iconcls} />)}
                     </ul>
                 </div>
                 <div className="middle-border"></div>

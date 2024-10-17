@@ -354,7 +354,7 @@
     margin-top: 3em;
       display: flex;
       width: 100%;
-      /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
+      flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
   }
@@ -427,11 +427,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    
+  }
+  .hoverImageCard{
+    filter: grayscale(1) blur(1px);
+    transition: 700ms;
 
   }
   .hoverImageCard:hover{
     animation: 2s pulse ease-in-out;
+    filter: grayscale(0);
   }
 
   @keyframes pulse{
@@ -666,6 +671,27 @@
       transform: rotateY(180deg);
     }
   }
+
+
+
+
+  .statusProject{
+    position: absolute;
+    background-color: #15ea0f;
+    width: 139px;
+    height: 25px;
+    z-index: 10;
+    transform: rotate(317deg);
+    top: 27px;
+    left: -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .statusProject span{
+    font-weight: 700;
+    font-size: 12px;
+  }
 }
 
 
@@ -673,6 +699,11 @@
 section .containerp .cardp ul .branding , section .containerp .cardmp ul .branding {
   color: #704a31;
 }
+
+section .containerp .cardp ul .brandinghosp , section .containerp .cardmp ul .branding {
+  color: #316970;
+}
+
 section .containerp .cardp ul .mongo {
     color: #210909;
   }

@@ -1401,6 +1401,106 @@ a{
 
 
 
+
+
+
+
+  /* ACHIEVEMENTS  */
+  .skillIcons{
+    color: #9e9e9e;
+    transition: 700ms;
+  }
+  .skillIcons:hover{
+    color: #47e313;
+    transform: scale(1.1);
+  }
+  #Microsoft{
+    background-image: url(../src/components/items/images/ui/new.png);
+    width: 30px;
+    height: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* CONTACT */
   .contact-section{
     display: flex;
@@ -1759,7 +1859,7 @@ a{
   }
   .bioLists{
     background: -webkit-linear-gradient(45deg,var(--greenGrad),var(--darkGreenGrad));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 64px;
   }
@@ -2021,8 +2121,7 @@ a{
     font-family: Poppins, sans-serif;
     font-weight: 900 !important;
     background: -webkit-linear-gradient(45deg,var(--greenGrad),var(--darkGreenGrad));
-    
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .about-info{
@@ -2510,7 +2609,7 @@ a{
     font-size: 9px;
     text-transform: uppercase;
     background: linear-gradient(0deg, grey, white, white);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .back-end-tech{
@@ -2851,7 +2950,11 @@ a{
       flex:3;
       background-color: red;
   }
-    
+
+
+
+
+
 
 
 
@@ -3324,6 +3427,7 @@ a{
     margin: 0;
     padding: 0;
   }
+
    .scene .left-zone .list li.item input[type=radio] {
     display: none;
   }
@@ -3361,6 +3465,9 @@ a{
   .scene .left-zone .list li.item input[type=radio] ~ label{
     border-bottom: 1px solid rgba(255, 255, 255, 0.168);
   }
+
+
+
   .scene .left-zone .list li.item input[type=radio] ~ label.label_guvi:before {
     content: " ";
     display: block;
@@ -3376,6 +3483,8 @@ a{
   .scene .left-zone .list li.item input[type=radio] ~ label.label_guvi:hover{
     color: #00B16A;
   }
+
+
   .scene .left-zone .list li.item input[type=radio] ~ label.label_bishop:before {
     content: " ";
     display: block;
@@ -3391,6 +3500,9 @@ a{
   .scene .left-zone .list li.item input[type=radio] ~ label.label_bishop:hover{
     color: cyan;
   }
+
+
+
   .scene .left-zone .list li.item input[type=radio] ~ label.label_coursera:before {
     content: " ";
     display: block;
@@ -3403,9 +3515,35 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   .scene .left-zone .list li.item input[type=radio] ~ label.label_coursera:hover{
     color: gold;
   }
+
+
+
+
+  .scene .left-zone .list li.item input[type=radio] ~ label.label_coursera_excel:hover{
+    color: rgb(123, 0, 255);
+  }
+  .scene .left-zone .list li.item input[type=radio] ~ label.label_coursera_excel:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    margin-left: 15px;
+    background-image: url("./components/items/images/logos/coursera.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+
   .scene .left-zone .list li.item input[type=radio] ~ .content.content_guvi .picto {
     height: 300px;
     width: 500px;
@@ -3417,6 +3555,9 @@ a{
    .scene .left-zone .list li.item input[type=radio] ~ .content.content_guvi h2 {
     color: #00B16A;
   }
+
+
+
   .scene .left-zone .list li.item input[type=radio] ~ .content.content_bishop .picto {
     height: 300px;
     width: 500px;   
@@ -3428,6 +3569,10 @@ a{
    .scene .left-zone .list li.item input[type=radio] ~ .content.content_bishop h2 {
     color: cyan;
   }
+
+
+
+
   .scene .left-zone .list li.item input[type=radio] ~ .content.content_coursera .picto {
     height: 300px;
     width: 500px;
@@ -3439,6 +3584,23 @@ a{
    .scene .left-zone .list li.item input[type=radio] ~ .content.content_coursera h2 {
     color: gold;
   }
+
+
+  
+  .scene .left-zone .list li.item input[type=radio] ~ .content.content_coursera_excel .picto {
+    height: 300px;
+    width: 500px;
+    background-image: url("./components/items/images/certificates/excel.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+   .scene .left-zone .list li.item input[type=radio] ~ .content.content_coursera_excel h2 {
+    color: rgb(191, 0, 255);
+  }
+
+
+
   .scene .left-zone .list li.item input[type=radio]:checked ~ label.label_guvi {
     color: #00B16A;
     border-right: solid 4px #00B16A;
@@ -3459,17 +3621,27 @@ a{
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     background-color: rgba(255, 217, 0, 0.105);
   }
+
+  .scene .left-zone .list li.item input[type=radio]:checked ~ label.label_coursera_excel {
+    color: #cf6ef5;
+    border-right: solid 4px #cf6ef5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(221, 0, 255, 0.105);
+  }
+
+
   .scene .left-zone .list li.item input[type=radio] ~ .content h2:first-letter {
     text-transform: uppercase;
   }
   .scene .left-zone .list li.item input[type=radio] ~ .content a {
     max-width: 50%;
     text-align: center;
-    color: white;
+   
+    color: #6b6b6b;
     transition: 800ms;
   }
   .scene .left-zone .list li.item input[type=radio] ~ .content a:hover{
-    color: var(--greenText);
+    color: white;
 
   }
    .scene .left-zone .list li.item input[type=radio]:checked ~ label {
@@ -3501,7 +3673,149 @@ a{
     border: 1px solid #ffffff33;
   }
 
+    /* <==================ACHIEVEMENTS =====================> */
 
+
+    .achievement-section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .skillIcons{
+      color: #9e9e9e;
+      transition: 700ms;
+    }
+    .skillIcons:hover{
+      color: #47e313;
+      transform: scale(1.1);
+    }
+
+    .new{
+      background-image: url(../src/components/items/images/ui/new.png);
+      background-size: cover;
+      background-position: center;
+      width: 20px;
+      height: 22px;
+      position: absolute;
+      left: 25%;
+    }
+    .old{
+      background:none;
+      width: 2px;
+      height: 2px;
+    }
+
+
+    .achievement_boxes{
+      display: flex;
+      width: 80vw;
+      min-height: 600px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .achieve_portion{
+      position: relative;
+      width: 435px;
+      height: 150px;
+      border-radius: 15px;
+      margin:10px 20px;
+    }
+    #ach1{
+      background-color: hsl(270, 50%, 11%);
+      background-image: linear-gradient(120deg, hsla(22, 97%, 47%, 0.5), 10%,hsl(0deg 0.58% 6.61%) 60%), url(../src/components/items/images/certificates/vidhya.jpg);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+
+    #ach2{
+      background-color: hsl(270, 50%, 11%);
+      background-image: linear-gradient(120deg, hsl(167.58deg 97% 47% / 50%), 10%,hsl(0deg 0.58% 6.61%) 60%), url(../src/components/items/images/certificates/rkh.jpeg);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    #ach3{
+      background-color: hsl(270, 50%, 11%);
+      background-image: linear-gradient(120deg, hsla(201, 97%, 47%, 0.5), 10%,hsl(0deg 0.58% 6.61%) 60%), url(../src/components/items/images/certificates/bishop.jpg);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    .certiicon{
+      position: absolute;
+      right: -14px;
+      top: -45px;
+    }
+
+
+    .achieve_details{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      justify-content: space-between;
+      box-shadow: 0 6px 16px 0 hsla(270, 30%, 3%, .4);
+    }
+    .achievementGal{
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .imgBorder{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      width: 80%;
+      padding: 4px;
+      border: 3px solid #949494;
+      border-radius: 15px;
+    }
+    .achieve_img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: 800ms;
+      position: relative;
+      z-index: 99;
+    }
+    .achieve_img:hover{
+      width: 500px;
+      height: 300px;
+      padding-left:50px;
+    }
+    .achieve_texts{
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .achieve_texts h1{
+      font-size: 19px;
+      padding: 0;
+      margin: 0;
+    }
+    .achieve_texts h3{
+      font-size: 14px;
+    }
+    .achieve_texts h6{
+      color: grey;
+    }
 
 
 

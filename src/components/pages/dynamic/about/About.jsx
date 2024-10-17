@@ -160,6 +160,10 @@ const About = () => {
                                 </div>
                                 <div className='front-end-tech'>
                                     <div className='headerbackscrolllinksleft'>
+                                        <Icon icon="lineicons:nextjs" width="30" height="30" className="skillIcons" />
+                                        <span className='tech-title'>Next.JS</span>
+                                    </div>
+                                    <div className='headerbackscrolllinksleft'>
                                         <FontAwesomeIcon icon={faReact} />
                                         <span className='tech-title'>React JS</span>
                                     </div>
@@ -179,6 +183,7 @@ const About = () => {
                                         <FontAwesomeIcon icon={faCss3Alt} />
                                         <span className='tech-title'>css 3</span>
                                     </div>
+
                                 </div>
                             </div>
                             <div className='back-end-div'>

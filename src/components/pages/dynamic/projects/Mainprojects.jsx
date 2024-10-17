@@ -10,9 +10,12 @@ function ProjectsView(props) {
     return (
         <div className="cardp">
             <div className="cardp-inner" style={{ backgroundColor: "#fff" }}>
+                <div className="statusProject" style={{ backgroundColor: `${props.statuscolor}` }}>
+                    <span>{props.statusCheck}</span>
+                </div>
                 <div className="boxp">
                     <div className="imgBoxp">
-                        <img src={props.imgurl} alt={props.title} className="hoverImageCard"/>
+                        <img src={props.imgurl} alt={props.title} className="hoverImageCard" />
                     </div>
                     <div className="iconp">
                         <Link to={props.imglink} className="iconBoxp" style={{ backgroundColor: `${props.imgbg}` }}><span className="material-symbols-outlined">
@@ -39,7 +42,7 @@ const Mainprojects = () => {
         <section>
             <h2><span className='gradient-color'>Main</span> Projects</h2>
             <div className="containerp">
-                {mainp.map((x) => <ProjectsView title={x.prname} imgurl={x.primg} imgsdesc={x.prsmalldesc} imglink={x.prlink} imgbg={x.iconBoxp} stack1={x.stack1} stack2={x.stack2} stack3={x.stack3} bgclr1={x.stack1bg} bgclr2={x.stack2bg} bgclr3={x.stack3bg} stclass1={x.stack1clr} stclass2={x.stack2clr} stclass3={x.stack3clr} />)}
+                {mainp.map((x) => <ProjectsView title={x.prname} imgurl={x.primg} imgsdesc={x.prsmalldesc} imglink={x.prlink} imgbg={x.iconBoxp} stack1={x.stack1} stack2={x.stack2} stack3={x.stack3} bgclr1={x.stack1bg} bgclr2={x.stack2bg} bgclr3={x.stack3bg} stclass1={x.stack1clr} stclass2={x.stack2clr} stclass3={x.stack3clr} statusCheck={x.status} statuscolor={x.staCol} />)}
             </div>
         </section>
     );
