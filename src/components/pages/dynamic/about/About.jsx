@@ -3,7 +3,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faReact, faAngular, faNodeJs, faFigma, faHtml5, faCss3Alt, faPython, faJs } from '@fortawesome/free-brands-svg-icons';
-import { faSquarePhone, faUser, faCakeCandles, faFlag, faHouseChimney, faVolumeHigh, faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { faSquarePhone, faUser, faCakeCandles, faFlag, faHouseChimney, faVolumeHigh, faTerminal, faC } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import cv from '../../../items/docs/cv.pdf'
 import india from '../../../items/images/ui/india.png'
@@ -207,6 +207,32 @@ const About = () => {
                                         <img src={mongoimg} alt='mongo db icon' className='mongos' />
                                         <span className='tech-title'>mongo DB</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='content-skill2' style={{ marginBottom: "30px" }}>
+                            <div className='app-div-header'>
+                                <span>Programming Languages</span>
+                            </div>
+                            <div className='app-tech'>
+                                <div className='h'>
+                                    <FontAwesomeIcon icon={faC} />
+                                    <span className='tech-title'>C</span>
+                                </div>
+                                <div className='h1'>
+                                    <Icon icon="lineicons:python" width="32" height="32" style={{ color: "white" }} />
+                                    <span className='tech-title'>Python</span>
+                                </div>
+                                <div className='h2'><Icon icon="fa-brands:rust" width="32" height="32" style={{ color: "white" }} />
+                                    <span className='tech-title'>Rust</span>
+                                </div>
+                                <div className='h3'>
+                                    <Icon icon="lineicons:java" width="32" height="32" style={{ color: "white" }} />
+                                    <span className='tech-title'>Java</span>
+                                </div>
+                                <div className='h4'>
+                                    <Icon icon="fontisto:php" width="32" height="32" style={{ color: "white" }} />
+                                    <span className='tech-title'>Php</span>
                                 </div>
                             </div>
                         </div>
